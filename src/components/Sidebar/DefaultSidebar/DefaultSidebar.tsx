@@ -42,7 +42,7 @@ const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
               subscribes.length === 0
               ?
                 <div className={styles.subscribesNotFound}>
-                  <img src={sleepyCatPNG} alt="sleepy ass" title='ZzZzZz...' />
+                  <img src={sleepyCatPNG} alt="sleepy ass cat" title='ZzZzZz... Sleepy ass cat' />
                   <p>Вы ни на кого не подписаны!</p>
                 </div>
               :
