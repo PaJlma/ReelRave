@@ -23,7 +23,7 @@ interface IDefaultSidebarProps {
 }
 
 const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
-  const subscribes = useTSelector(state => state.channels.list);
+  const subscribes = useTSelector(state => state.channels.subscribed);
 
   return (
     <div className={styles.body}>
