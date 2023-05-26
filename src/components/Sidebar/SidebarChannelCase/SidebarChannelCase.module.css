@@ -1,0 +1,31 @@
+.body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    padding: 0 0.625rem;
+    transition: 200ms;
+}
+
+.avatar {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info p {
+    font-size: 0.75rem;
+}
+
+.body:hover {
+    background-color: #323839;
+}

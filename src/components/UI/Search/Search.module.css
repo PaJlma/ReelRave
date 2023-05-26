@@ -1,0 +1,32 @@
+.body {
+    display: flex;
+    align-items: center;
+    height: 1.875rem;
+    width: 37.5rem;
+    border: 0.0625rem solid #09C61C;
+    border-radius: 0.3125rem;
+}
+
+.body input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.625rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.body button {
+    width: 3.125rem;
+    height: 100%;
+    background-color: #09C61C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body button img {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+}
