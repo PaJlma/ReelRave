@@ -23,7 +23,7 @@ interface IDefaultSidebarProps {
 }
 
 const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
-  const subscribes = useTSelector(state => state.channels.subscribed);
+  const subscribes = useTSelector(state => state.channels.list);
 
   return (
     <div className={styles.body}>
@@ -46,7 +46,8 @@ const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
                   <p>Вы ни на кого не подписаны!</p>
                 </div>
               :
-                subscribes.map(channel => <SidebarChannelCase 
+                subscribes.map(channel => <SidebarChannelCase
+                    key={channel.privateName} 
                     avatar={channel.avatar} 
                     text={
                       channel.publicName.length < 17 

@@ -1,5 +1,5 @@
 .body {
-    height: 0.0625rem;
+    min-height: 0.0625rem;
     background-color: #09C61C;
     width: 100%;
 }
