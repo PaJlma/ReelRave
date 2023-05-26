@@ -1,0 +1,55 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 22.5rem;
+    height: 18.75rem;
+    color: #fff;
+}
+
+.preview {
+    display: block;
+    min-width: 22.5rem;
+    min-height: 12.6875rem;
+    border-radius: 0.625rem;
+}
+
+.wrapper {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.avatar {
+    display: block;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.channel {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #979797;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #979797;
+}

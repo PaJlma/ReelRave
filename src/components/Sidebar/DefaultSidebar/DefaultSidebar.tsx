@@ -42,7 +42,7 @@ const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
               subscribes.length === 0
               ?
                 <div className={styles.subscribesNotFound}>
-                  <img src={sleepyCatPNG} alt="sleepy ass cat" title='ZzZzZz... Sleepy ass cat' />
+                  <img src={sleepyCatPNG} alt="sleepy ass cat" title='ZzZzZz... Sleepy ass cat... ZzZzZz...' />
                   <p>Вы ни на кого не подписаны!</p>
                 </div>
               :
@@ -56,6 +56,7 @@ const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
                       :
                       channel.publicName.slice(0, 17)+'...'
                     } 
+                    isConfirmed={channel.isConfirmed}
                     to={`/@${channel.privateName}`}
                   />
                 )

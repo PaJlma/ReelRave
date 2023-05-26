@@ -8,16 +8,21 @@ interface ISidebarChannelCaseProps {
     to: string;
     avatar?: string;
     text?: string;
+    isConfirmed?: boolean;
 }
 
-const SidebarChannelCase: React.FC<ISidebarChannelCaseProps> = ({ to, avatar, text, ...props }) => {
+const SidebarChannelCase: React.FC<ISidebarChannelCaseProps> = ({ to, avatar, text, isConfirmed, ...props }) => {
   return (
     <NavLink to={to}>
         <div className={styles.body}>
             <img className={styles.avatar} src={avatar} alt={text} />
             <div className={styles.info}>
                 <p>{text}</p>
-                <img className={styles.confirmed} src={confirmedSVG} alt="confirmed" />
+                {
+                  isConfirmed
+                  &&
+                  <img className={styles.confirmed} src={confirmedSVG} alt="confirmed" />
+                }
             </div>
         </div>
     </NavLink>

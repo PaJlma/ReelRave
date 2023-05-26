@@ -5,7 +5,7 @@
     height: 100vh;
 }
 
-.body::-webkit-scrollbar {
+.content::-webkit-scrollbar {
     display: none;
 }
 
@@ -13,9 +13,9 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     width: 13.4375rem;
-    padding-right: 5px;
+    padding-right: 0.3125rem;
     overflow-x: auto;
 }
 
@@ -33,12 +33,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .subscribesNotFound img {
     display: block;
-    width: 70px;
+    width: 4.375rem;
+    filter: opacity(80%);
 }
 
 .subscribesNotFound p {
@@ -47,6 +48,6 @@
     text-align: center;
 }
 
-.body:hover.body::-webkit-scrollbar {
+.content:hover.content::-webkit-scrollbar {
     display: block;
 }
