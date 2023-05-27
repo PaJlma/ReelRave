@@ -1,0 +1,10 @@
+.body {
+    width: 73.625rem;
+    height: 41.4375rem;
+}
+
+.body video {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

@@ -33,12 +33,12 @@ const VideoCase: React.FC<IVideoCaseProps> = (
       <NavLink className={styles.body} to={`/video/${id}`}>
             <img src={preview} alt={title} className={styles.preview} />
             <div className={styles.wrapper}>
-              <NavLink to={`/@${channelPrivateName}`}>
+              <NavLink to={`/channel/${channelPrivateName}`}>
                 <img src={channel?.avatar} alt={channel?.publicName} className={styles.avatar} />
               </NavLink>
               <div className={styles.info}>
                 <h5 className={styles.title}>{title}</h5>
-                <NavLink to={`/@${channelPrivateName}`}>
+                <NavLink to={`/channel/${channelPrivateName}`}>
                   <p className={styles.channel}>{channel?.publicName}</p>
                 </NavLink>
                 <div className={styles.flex}>

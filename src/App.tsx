@@ -4,6 +4,7 @@ import styles from './App.module.css';
 import DefaultSidebar from './components/Sidebar/DefaultSidebar/DefaultSidebar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
+import Video from './components/Pages/Video/Video';
 interface IAppProps {
 }
 
@@ -15,6 +16,7 @@ const App: React.FC<IAppProps> = (props) => {
         <DefaultSidebar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/video/:id' element={<Video />} />
         </Routes>
       </div>
     </div>

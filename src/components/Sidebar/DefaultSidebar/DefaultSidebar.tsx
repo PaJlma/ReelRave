@@ -57,7 +57,7 @@ const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
                       channel.publicName.slice(0, 17)+'...'
                     } 
                     isConfirmed={channel.isConfirmed}
-                    to={`/@${channel.privateName}`}
+                    to={`/channel/${channel.privateName}`}
                   />
                 )
             }
