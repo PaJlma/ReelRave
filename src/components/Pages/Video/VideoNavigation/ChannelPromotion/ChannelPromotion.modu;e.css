@@ -1,0 +1,35 @@
+.body {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.avatar {
+    display: block;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.channel {
+    font-size: 0.8125rem;
+    font-weight: 550;
+}
+
+.counter {
+    font-size: 0.6875rem;
+    font-weight: 400;
+}
+
+.button {
+    color: #000;
+    display: block;
+    height: 1.5rem;
+    padding: 0 0.625rem;
+    background-color: #09C61C;
+    border-radius: 0.3125rem;
+}

@@ -4,6 +4,7 @@ import styles from './Video.module.css';
 
 import { useTSelector } from '../../../hooks/redux';
 import { useParams } from 'react-router-dom';
+import VideoInfo from './VideoInfo/VideoInfo';
 
 interface IVideoProps {
 }
@@ -15,6 +16,7 @@ const Video: React.FC<IVideoProps> = (props) => {
   return (
     <div className={styles.body}>
       <Player video={video?.video} autoPlay={true} />
+      <VideoInfo title={video?.title} privateName={video?.channelPrivateName} />
     </div>
   );
 };
