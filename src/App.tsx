@@ -5,6 +5,8 @@ import DefaultSidebar from './components/Sidebar/DefaultSidebar/DefaultSidebar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
 import Video from './components/Pages/Video/Video';
+import SlidingSidebar from './components/Sidebar/SlidingSidebar/SlidingSidebar';
+import Router from './components/Router/Router';
 interface IAppProps {
 }
 
@@ -12,13 +14,7 @@ const App: React.FC<IAppProps> = (props) => {
   return (
     <div className={styles.body}>
       <Header />
-      <div className={styles.main}>
-        <DefaultSidebar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/video/:id' element={<Video />} />
-        </Routes>
-      </div>
+      <Router />
     </div>
   );
 };

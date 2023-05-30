@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ChannelPromotion from './ChannelPromotion/ChannelPromotion';
+import ChannelPromotion from '../../../UI/ChannelPromotion/ChannelPromotion';
 import styles from './VideoNavigation.module.css';
 
 interface IVideoNavigationProps {

@@ -13,13 +13,20 @@ const channelSlice = createSlice({
     initialState,
     reducers: {
         subscribe(state, action: PayloadAction<IChannel>) {
-            state.subscribed.includes(action.payload) 
-            ? 
-            state.subscribed.filter(channel => channel.privateName !== action.payload.privateName) 
-            : 
-            state.subscribed.push(action.payload);
+            const channelExact = state.subscribed.some(channel => channel.privateName === action.payload.privateName);
+            const channelObject = state.list.find(channel => channel.privateName === action.payload.privateName);
+
+            if (channelObject) {
+                if (channelExact) {
+                    state.subscribed = state.subscribed.filter(channel => channel.privateName !== action.payload.privateName);
+                    channelObject.subscribesCount--;
+                } else {
+                    state.subscribed.push(action.payload);
+                    channelObject.subscribesCount++;
+                }
+            }
         }
     }
 });
 
-export default channelSlice;
+export default channelSlice;  

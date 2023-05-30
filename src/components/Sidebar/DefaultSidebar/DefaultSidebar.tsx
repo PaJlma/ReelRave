@@ -15,58 +15,46 @@ import wildSVG from '../../../assets/images/UI/wild.svg';
 import blogsSVG from '../../../assets/images/UI/blogs.svg';
 import broadcastsSVG from '../../../assets/images/UI/broadcasts.svg';
 
-import sleepyCatPNG from '../../../assets/images/UI/sleepy-cat.png';
 import SidebarChannelCase from '../SidebarChannelCase/SidebarChannelCase';
 import { useTSelector } from './../../../hooks/redux';
+
+import '../../../index.css';
+import SidebarGroup from '../SidebarGroup/SidebarGroup';
+import SubscribesNotFound from '../../UI/SubscribesNotFound/SubscribesNotFound';
+import Subscribes from '../Subscribes/Subscribes';
 
 interface IDefaultSidebarProps {
 }
 
 const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
   const subscribes = useTSelector(state => state.channels.subscribed);
+  const options = useTSelector(state => state.options);
 
   return (
-    <div className={styles.body}>
+    <div className={`${options.isDefaultSidebarActive ? styles.active : ''} ${styles.body}`}>
         <div className={styles.content}>
-          <div className={styles.group}>
+          <SidebarGroup>
             <SidebarCase image={homeSVG} text='Главная' to='/' />
             <SidebarCase image={recomendationsSVG} text='Рекомендации' to='/recomendations' />
             <SidebarCase image={likedSVG} text='Понравившиеся' to='/liked' />
             <SidebarCase image={historySVG} text='История' to='/history' />
-          </div>
+          </SidebarGroup>
 
           <Separator />
-
-          <div className={styles.group}>
+          
+          <SidebarGroup>
             {
               subscribes.length === 0
               ?
-                <div className={styles.subscribesNotFound}>
-                  <img src={sleepyCatPNG} alt="sleepy ass cat" title='ZzZzZz... Sleepy ass cat... ZzZzZz...' />
-                  <p>Вы ни на кого не подписаны!</p>
-                </div>
+                <SubscribesNotFound />
               :
-                subscribes.map(channel => <SidebarChannelCase
-                    key={channel.privateName} 
-                    avatar={channel.avatar} 
-                    text={
-                      channel.publicName.length < 17 
-                      ?
-                      channel.publicName
-                      :
-                      channel.publicName.slice(0, 17)+'...'
-                    } 
-                    isConfirmed={channel.isConfirmed}
-                    to={`/channel/${channel.privateName}`}
-                  />
-                )
+                <Subscribes />
             }
-            
-          </div>
-
+          </SidebarGroup>  
+        
           <Separator />
 
-          <div className={styles.group}>
+          <SidebarGroup>
             <legend>Категории:</legend>
             <SidebarCase image={sportSVG} text='Спорт' to='/sport' />
             <SidebarCase image={gamesSVG} text='Игры' to='/games' />
@@ -74,7 +62,7 @@ const DefaultSidebar: React.FC<IDefaultSidebarProps> = (props) => {
             <SidebarCase image={wildSVG} text='Окружающий мир' to='/wild' />
             <SidebarCase image={blogsSVG} text='Блоги' to='/blogs' />
             <SidebarCase image={broadcastsSVG} text='Прямые трансляции' to='/broadcasts' />
-          </div>
+          </SidebarGroup>
         </div>
     </div>
   );

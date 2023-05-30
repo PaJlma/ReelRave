@@ -12,17 +12,20 @@ const Home: React.FC<IHomeProps> = (props) => {
 
   return (
     <div className={styles.body}>
-        {
-          videos.map(video => <VideoCase
-            key={video.id} 
-            id={video.id}
-            preview={video.preview}
-            title={video.title}
-            time={video.time}
-            viewsCount={video.viewsCount}
-            channelPrivateName={video.channelPrivateName}
-          />)
-        }
+        <div className={styles.content}>
+          {
+            videos.map(video => <VideoCase
+              key={video.id} 
+              id={video.id}
+              preview={video.preview}
+              title={video.title}
+              time={video.time}
+              viewsCount={video.viewsCount}
+              channelPrivateName={video.channelPrivateName}
+            />
+            )
+          }
+        </div>
     </div>
   );
 };

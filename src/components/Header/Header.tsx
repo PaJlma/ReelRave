@@ -8,18 +8,32 @@ import settingsSVG from '../../assets/images/UI/settings.svg';
 import Logotype from '../UI/Logotype/Logotype';
 import Search from '../UI/Search/Search';
 import Button from '../UI/Button/Button';
+import { useDispatch } from 'react-redux';
+import optionsSlice from './../../store/reducers/optionsSlice';
+import { Route, Routes } from 'react-router-dom';
 
 interface IHeaderProps {
 
 }
 
 const Header: React.FC<IHeaderProps> = (props) => {
+    const dispatch = useDispatch();
+
+    const burgerMenuDefaultClickHandler = () => {
+        dispatch(optionsSlice.actions.toggleDefaultSidebar());
+    }
+
+    const burgerMenuSlidingClickHandler = () => {
+        dispatch(optionsSlice.actions.toggleSlidingSidebar());
+    }
+
     return (
         <header className={styles.body}>
             <div className={styles.wrapper}>
-                <RoundButton>
-                    <img src={burgerMenuSVG} alt="burger-menu" />
-                </RoundButton>
+                <Routes>
+                    <Route path='/' element={<RoundButton onClick={burgerMenuDefaultClickHandler}><img src={burgerMenuSVG} alt="burger-menu" /></RoundButton>} />
+                    <Route path='/video/:id' element={<RoundButton onClick={burgerMenuSlidingClickHandler}><img src={burgerMenuSVG} alt="burger-menu" /></RoundButton>} />
+                </Routes>
                 <Logotype />
             </div>
 

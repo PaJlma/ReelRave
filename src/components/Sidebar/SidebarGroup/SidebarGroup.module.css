@@ -1,0 +1,9 @@
+.body {
+    width: 100%;
+}
+
+.body legend {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    margin-bottom: 0.9375rem;
+}

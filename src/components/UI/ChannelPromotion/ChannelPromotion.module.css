@@ -1,0 +1,78 @@
+.body {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.avatar {
+    display: block;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.channelBox {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.confirmed {
+    display: block;
+    width: 0.625rem;
+    height: 0.625rem;   
+}
+
+.channel {
+    color: rgb(238, 238, 238);
+    font-size: 0.95rem;
+    font-weight: 550;
+}
+
+.counter {
+    color: #979797;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.subscribe {
+    color: #000;
+    display: block;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background-color: #09C61C;
+    border: 0.0625rem solid #09C61C;
+    font-weight: 300;
+    font-size: 0.85rem;
+    border-radius: 0.3125rem;
+    transition: 200ms;
+}
+
+.subscribed {
+    color: #09C61C;
+    display: block;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background-color: transparent;
+    border: 0.0625rem solid #09C61C;
+    font-weight: 300;
+    font-size: 0.85rem;
+    border-radius: 0.3125rem;
+    transition: 200ms;
+}
+
+.subscribe:hover {
+    background-color: #0bdd20;
+    border: 0.0625rem solid #0bdd20;
+}
+
+.subscribed:hover {
+    border: 1px solid #0bdd20;
+    color: #0bdd20;
+}

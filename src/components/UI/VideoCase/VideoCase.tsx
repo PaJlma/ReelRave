@@ -4,6 +4,7 @@ import { useTSelector } from './../../../hooks/redux';
 import { IChannel } from './../../../types/channelTypes';
 import { NavLink } from 'react-router-dom';
 import showTimeAgo from './../../../scripts/timeManager';
+import getNoun from './../../../scripts/getNoun';
 
 interface IVideoCaseProps {
   id: string;
@@ -42,8 +43,8 @@ const VideoCase: React.FC<IVideoCaseProps> = (
                   <p className={styles.channel}>{channel?.publicName}</p>
                 </NavLink>
                 <div className={styles.flex}>
-                  <p>{viewsCount} просмотров</p>
-                  <p>{timeAgo} назад</p>
+                  <p>{`${viewsCount} ${getNoun(viewsCount, 'просмотр', 'просмотра', 'просмотров')}`}</p>
+                  <p>{`${timeAgo} назад`}</p>
                 </div>
               </div>
             </div>
