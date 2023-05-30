@@ -10,7 +10,7 @@ import shrekAvatar from '../images/avatars/shrek.png';
 
 const channels: IChannel[] = [
     {
-        publicName: 'Михайло Соколиное Око',
+        publicName: 'Михайло Соколиное Око asddasdasdasdsadasdasdasdasdsadads',
         privateName: 'Mihailo',
         isConfirmed: true,
         avatar: mihailoAvatar,

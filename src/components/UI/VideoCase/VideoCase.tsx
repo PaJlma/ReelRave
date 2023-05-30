@@ -5,6 +5,7 @@ import { IChannel } from './../../../types/channelTypes';
 import { NavLink } from 'react-router-dom';
 import showTimeAgo from './../../../scripts/timeManager';
 import getNoun from './../../../scripts/getNoun';
+import sliceStringTo from './../../../scripts/sliceStringTo';
 
 interface IVideoCaseProps {
   id: string;
@@ -38,9 +39,9 @@ const VideoCase: React.FC<IVideoCaseProps> = (
                 <img src={channel?.avatar} alt={channel?.publicName} className={styles.avatar} />
               </NavLink>
               <div className={styles.info}>
-                <h5 className={styles.title}>{title}</h5>
+                <h5 className={styles.title}>{ sliceStringTo(title, 70) }</h5>
                 <NavLink to={`/channel/${channelPrivateName}`}>
-                  <p className={styles.channel}>{channel?.publicName}</p>
+                  <p className={styles.channel}>{ sliceStringTo(channel?.publicName, 25) }</p>
                 </NavLink>
                 <div className={styles.flex}>
                   <p>{`${viewsCount} ${getNoun(viewsCount, 'просмотр', 'просмотра', 'просмотров')}`}</p>
