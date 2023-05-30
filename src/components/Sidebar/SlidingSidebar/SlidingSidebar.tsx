@@ -15,12 +15,10 @@ import wildSVG from '../../../assets/images/UI/wild.svg';
 import blogsSVG from '../../../assets/images/UI/blogs.svg';
 import broadcastsSVG from '../../../assets/images/UI/broadcasts.svg';
 
-import SidebarChannelCase from '../SidebarChannelCase/SidebarChannelCase';
 import { useTSelector } from './../../../hooks/redux';
 
 import '../../../index.css';
 import SidebarGroup from '../SidebarGroup/SidebarGroup';
-import SubscribesNotFound from '../../UI/SubscribesNotFound/SubscribesNotFound';
 import Subscribes from './../Subscribes/Subscribes';
 
 interface ISlidingSidebarProps {

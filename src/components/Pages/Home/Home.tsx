@@ -1,5 +1,4 @@
 import * as React from 'react';
-import DefaultSidebar from '../../Sidebar/DefaultSidebar/DefaultSidebar';
 import styles from './Home.module.css';
 import { useTSelector } from './../../../hooks/redux';
 import VideoCase from '../../UI/VideoCase/VideoCase';
