@@ -56,7 +56,9 @@
 
 .subscribed {
     color: #09C61C;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
     height: 2.5rem;
     padding: 0 1rem;
     background-color: transparent;
