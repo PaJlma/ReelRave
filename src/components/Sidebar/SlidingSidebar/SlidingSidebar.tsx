@@ -20,6 +20,7 @@ import { useTSelector } from './../../../hooks/redux';
 import '../../../index.css';
 import SidebarGroup from '../SidebarGroup/SidebarGroup';
 import Subscribes from './../Subscribes/Subscribes';
+import SubscribesNotFound from '../../UI/SubscribesNotFound/SubscribesNotFound';
 
 interface ISlidingSidebarProps {
 }
@@ -41,7 +42,15 @@ const SlidingSidebar: React.FC<ISlidingSidebarProps> = (props) => {
             <Separator />
 
 
-            <Subscribes />
+            <SidebarGroup>
+                {
+                subscribes.length === 0
+                ?
+                    <SubscribesNotFound />
+                :
+                    <Subscribes />
+                }
+            </SidebarGroup>  
 
             <Separator />
 
