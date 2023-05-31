@@ -3,6 +3,7 @@ export interface IVideo {
     title: string;
     channelPrivateName: string;
     time: string;
+    category: TVideoCategory,
     preview: string;
     video: string;
     viewsCount: number;
@@ -11,6 +12,7 @@ export interface IVideo {
     commentaries: ICommentary[];
 };
 
+export type TVideoCategory = 'sport' | 'pets' | 'wild' | 'blogs' | 'broadcasts' | 'music' | 'memes' | 'games';
 export interface ICommentary {
     channelPrivateName: string;
     time: string;
