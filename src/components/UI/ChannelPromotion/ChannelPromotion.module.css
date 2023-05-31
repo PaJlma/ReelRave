@@ -69,6 +69,18 @@
     transition: 200ms;
 }
 
+.checked {
+    display: block;
+    width: 0.7813rem;
+    height: 0.7813rem;
+}
+
+.active {
+    animation-name: checkedAppears;
+    animation-duration: 1.5s;
+    /* animation-timing-function: linear; */
+}
+
 .subscribe:hover {
     background-color: #0bdd20;
     border: 0.0625rem solid #0bdd20;
@@ -77,4 +89,18 @@
 .subscribed:hover {
     border: 1px solid #0bdd20;
     color: #0bdd20;
+}
+
+@keyframes checkedAppears {
+    from {
+        transform: scale(100%) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(700%) rotate(360deg);
+    }
+
+    to {
+        transform: scale(100%) rotate(720deg);
+    }
 }

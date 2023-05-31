@@ -20,8 +20,9 @@ const ChannelPromotion: React.FC<IChannelPromotionProps> = ({ privateName, ...pr
     const dispatch = useDispatch();
 
     const subscribeClickHandler = (): void => {
-        if (thisChannel === undefined) return;
-        dispatch(channelSlice.actions.subscribe(thisChannel));
+        if (thisChannel) {
+            dispatch(channelSlice.actions.subscribe(thisChannel));
+        }
     }
 
     return (
@@ -44,7 +45,12 @@ const ChannelPromotion: React.FC<IChannelPromotionProps> = ({ privateName, ...pr
             {   
                 subscribes.some(channel => channel.privateName === thisChannel?.privateName)
                 ?
-                <button className={styles.subscribed} onClick={subscribeClickHandler} >Вы подписаны <img src={checkSVG} alt="checked" /></button>
+                <button 
+                className={styles.subscribed} 
+                onClick={subscribeClickHandler} >
+                    Вы подписаны 
+                    <img src={checkSVG} className={styles.checked} alt="checked" />
+                </button>
                 :
                 <button className={styles.subscribe} onClick={subscribeClickHandler} >Подписаться</button>
             }
