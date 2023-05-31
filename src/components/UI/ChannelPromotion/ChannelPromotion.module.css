@@ -73,9 +73,6 @@
     display: block;
     width: 0.7813rem;
     height: 0.7813rem;
-}
-
-.active {
     animation-name: checkedAppears;
     animation-duration: 1.5s;
     /* animation-timing-function: linear; */
