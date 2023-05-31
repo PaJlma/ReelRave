@@ -2,7 +2,7 @@
     display: none;
     flex-direction: column;
     min-width: 16rem;
-    height: 100vh;
+    height: 95vh;
 }
 
 .body.active {

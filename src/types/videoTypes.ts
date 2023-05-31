@@ -23,4 +23,5 @@ export interface IVideoState {
     list: IVideo[];
     history: IVideo[];
     liked: IVideo[];
+    disliked: IVideo[];
 };
