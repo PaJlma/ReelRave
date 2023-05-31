@@ -18,14 +18,14 @@ const CategoriesSidebarGroup: React.FC<ICategoriesSidebarGroupProps> = (props) =
   return (
     <SidebarGroup>
         <legend>Категории:</legend>
-            <SidebarCase image={sportSVG} text='Спорт' to='/sport' />
-            <SidebarCase image={musicSVG} text='Музыка' to='/music' />
             <SidebarCase image={gamesSVG} text='Игры' to='/games' />
+            <SidebarCase image={musicSVG} text='Музыка' to='/music' />
             <SidebarCase image={memesSVG} text='Мемы' to='/memes' />
+            <SidebarCase image={broadcastsSVG} text='Прямые трансляции' to='/broadcasts' />
+            <SidebarCase image={sportSVG} text='Спорт' to='/sport' />
             <SidebarCase image={petsSVG} text='Питомцы' to='/pets' />
             <SidebarCase image={wildSVG} text='Окружающий мир' to='/wild' />
             <SidebarCase image={blogsSVG} text='Блоги' to='/blogs' />
-            <SidebarCase image={broadcastsSVG} text='Прямые трансляции' to='/broadcasts' />
     </SidebarGroup>
   );
 };
