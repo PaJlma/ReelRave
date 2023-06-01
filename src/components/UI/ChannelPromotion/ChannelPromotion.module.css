@@ -7,6 +7,7 @@
     display: block;
     min-width: 2.5rem;
     min-height: 2.5rem;
+    user-select: none;
 }
 
 .info {
@@ -26,7 +27,8 @@
 .confirmed {
     display: block;
     width: 0.625rem;
-    height: 0.625rem;   
+    height: 0.625rem;  
+    user-select: none; 
 }
 
 .channel {
@@ -51,6 +53,7 @@
     font-weight: 300;
     font-size: 0.85rem;
     border-radius: 0.3125rem;
+    user-select: none;
     transition: 200ms;
 }
 
@@ -66,6 +69,7 @@
     font-weight: 300;
     font-size: 0.85rem;
     border-radius: 0.3125rem;
+    user-select: none;
     transition: 200ms;
 }
 
