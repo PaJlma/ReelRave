@@ -9,10 +9,11 @@ export interface IVideo {
     viewsCount: number;
     likesCount: number;
     dislikesCount: number;
+    description: string;
     commentaries: ICommentary[];
 };
 
-export type TVideoCategory = 'sport' | 'pets' | 'wild' | 'blogs' | 'broadcasts' | 'music' | 'memes' | 'games';
+export type TVideoCategory = null | 'sport' | 'pets' | 'wild' | 'blogs' | 'broadcasts' | 'music' | 'memes' | 'games';
 export interface ICommentary {
     channelPrivateName: string;
     time: string;

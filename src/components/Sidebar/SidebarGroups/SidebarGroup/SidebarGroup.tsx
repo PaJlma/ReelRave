@@ -5,6 +5,8 @@ interface ISidebarGroupProps {
     children: React.ReactElement | React.ReactNode;
 }
 
+// <legend> Group title </legend>
+
 const SidebarGroup: React.FC<ISidebarGroupProps> = ({ children, ...props }) => {
   return (
     <div className={styles.body}>

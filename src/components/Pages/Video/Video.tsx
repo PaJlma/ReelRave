@@ -16,7 +16,14 @@ const Video: React.FC<IVideoProps> = (props) => {
   return (
     <div className={styles.body}>
       <Player video={video?.video} autoPlay={false} />
-      <VideoInfo videoID={id} title={video?.title} privateName={video?.channelPrivateName} />
+      <VideoInfo 
+        time={video?.time} 
+        viewsCount={video?.viewsCount} 
+        videoID={id} 
+        title={video?.title} 
+        privateName={video?.channelPrivateName} 
+        description={video?.description}
+      />
     </div>
   );
 };

@@ -31,6 +31,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=NXjlw-_a61A&ab_channel=%D0%98%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9`,
         commentaries: [],
     },
 
@@ -45,6 +46,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=S_rbxW_aDcQ&ab_channel=_%2FYkArcaneEdits%5C_`,
         commentaries: [],
     },
 
@@ -59,6 +61,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=s9oQRKsROF8&ab_channel=capybaross.`,
         commentaries: [],
     },
 
@@ -73,6 +76,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=wv969vgqwDw&t=10085s&ab_channel=10HoursMovies`,
         commentaries: [],
     },
 
@@ -87,6 +91,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=80BwqQQY31w&ab_channel=Wheatskins`,
         commentaries: [],
     },
         
@@ -101,6 +106,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=emb6qrcrBI4&ab_channel=whis0eedits`,
         commentaries: [],
     },
 
@@ -115,6 +121,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: ``,
         commentaries: [],
     },
 
@@ -129,6 +136,7 @@ const videos: IVideo[] = [
         viewsCount: 0,
         likesCount: 0,
         dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=bIcKKa2bVvg&ab_channel=MP3Nice`,
         commentaries: [],
     },
 ];
