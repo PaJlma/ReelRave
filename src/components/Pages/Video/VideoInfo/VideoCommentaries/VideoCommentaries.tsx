@@ -13,7 +13,7 @@ interface IVideoCommentariesProps {
 const VideoCommentaries: React.FC<IVideoCommentariesProps> = ({ commentaries, ...props }) => {
   return (
     <div className={styles.body}>
-        <p className={styles.countee}>{`${commentaries?.length} ${getNoun(commentaries?.length, 'комментарий', 'комментария', 'комментариев')}`}</p>
+        <p className={styles.counter}>{`${commentaries?.length} ${getNoun(commentaries?.length, 'комментарий', 'комментария', 'комментариев')}`}</p>
 
         <TextArea width='100%' />
 

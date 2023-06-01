@@ -21,7 +21,7 @@ import negrVideo from '../videos/negr.mp4';
 const videos: IVideo[] = [
     {
         id: 'Lg4AM7WcWeg6',
-        title: 'Славянский МГЕ прострел ',
+        title: 'Славянский МГЕ прострел',
         channelPrivateName: 'Mihailo',
         time: '2020 2 12 12 53 31',
         category: 'games',
