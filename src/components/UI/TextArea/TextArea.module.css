@@ -1,0 +1,34 @@
+.body {
+    display: flex;
+}
+
+.body textarea {
+    display: block;
+    height: 1.5625rem;
+    width: 100%;
+    resize: none;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    border-bottom: 0.0625rem solid #09C61C;
+}
+
+.body button {
+    width: 1.875rem;
+    height: 100%;
+    background-color: #09C61C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+
+.body img {
+    display: block;
+    width: 0.75rem;
+    height: 0.5625rem;
+}
+
+.body button:hover {
+    background-color: #0BDD20;
+}
