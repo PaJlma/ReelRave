@@ -23,6 +23,7 @@ const Video: React.FC<IVideoProps> = (props) => {
         title={video?.title} 
         privateName={video?.channelPrivateName} 
         description={video?.description}
+        commentaries={video?.commentaries}
       />
     </div>
   );

@@ -15,11 +15,11 @@ export interface IVideo {
 
 export type TVideoCategory = null | 'sport' | 'pets' | 'wild' | 'blogs' | 'broadcasts' | 'music' | 'memes' | 'games';
 export interface ICommentary {
-    channelPrivateName: string;
-    time: string;
-    text: string;
-    likesCount: number;
-    dislikesCount: number;
+    channelPrivateName?: string;
+    time?: string;
+    text?: string;
+    likesCount?: number;
+    dislikesCount?: number;
 };
 
 export interface IVideoState {

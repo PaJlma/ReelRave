@@ -31,7 +31,9 @@ const videos: IVideo[] = [
         likesCount: 0,
         dislikesCount: 0,
         description: `https://www.youtube.com/watch?v=NXjlw-_a61A&ab_channel=%D0%98%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9`,
-        commentaries: [],
+        commentaries: [
+            { channelPrivateName: 'FUCKER', time: '2023 6 1 12 38 0', text: 'ДАВИ ЯЩЕРОВ!', likesCount: 0, dislikesCount: 0 }
+        ],
     },
 
     {

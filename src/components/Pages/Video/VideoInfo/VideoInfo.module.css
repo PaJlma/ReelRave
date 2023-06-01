@@ -5,7 +5,7 @@
 }
 
 .title {
-    color: rgb(238, 238, 238);
+    color: rgb(204, 204, 204);
     font-size: 1.3rem;
     font-weight: 550;
 }
@@ -13,11 +13,11 @@
 .flex {
     display: flex;
     align-items: center;
-    gap: 1.875rem;
+    gap: 0.5rem;
 }
 
 .flex p {
-    font-size: 0.9375rem;
-    font-weight: 300;
-    color: rgb(238, 238, 238);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(204, 204, 204);
 }
