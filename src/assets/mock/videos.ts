@@ -1,4 +1,3 @@
-
 import { IVideo } from './../../types/videoTypes';
 
 import mgePreview from '../images/previews/mihailo.png';

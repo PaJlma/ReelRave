@@ -1,4 +1,4 @@
-function showTimeAgo(videoTime: string | undefined): string | undefined{
+function showTimeAgo(videoTime: string | undefined): string | undefined {
     if (videoTime) {
         const now = +new Date()
         let videoTimeArr = videoTime.split(" ").map(Number);
@@ -17,7 +17,7 @@ function showTimeAgo(videoTime: string | undefined): string | undefined{
             get years() { return Math.floor(this.months / 12) },
 
             get timeToShow() {
-                if (this.years != 0) {
+                if (this.years !== 0) {
                     return `${this.years} лет`
                 } else if (this.months > 0) {
                     return `${this.months} месяцев`
