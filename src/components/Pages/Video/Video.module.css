@@ -1,7 +1,6 @@
 .body {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
     padding: 1.5rem 5.625rem; 
     height: 95vh; 
 }
@@ -9,6 +8,8 @@
 .video {
     display: flex;
     flex-direction: column;
+    width: 1190px;
     gap: 0.625rem;
     overflow-y: auto;
+    height: 95vh; 
 }

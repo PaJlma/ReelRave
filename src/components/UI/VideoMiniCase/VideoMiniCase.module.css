@@ -1,5 +1,5 @@
 .body {
-    width: 18.75rem;
+    width: 500px;
     height: 9.0625rem;
     display: flex;
     gap: 0.625rem;
@@ -9,6 +9,7 @@
     display: block;
     width: 15rem;
     height: 9.0625rem;
+    border-radius: 10px;
 }
 
 .info {
