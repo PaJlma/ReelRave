@@ -1,0 +1,42 @@
+.body {
+    width: 18.75rem;
+    height: 9.0625rem;
+    display: flex;
+    gap: 0.625rem;
+}
+
+.preview {
+    display: block;
+    width: 15rem;
+    height: 9.0625rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+}
+
+.title {
+    font-size: 0.9375rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.channel {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #979797;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.flex p {
+    font-size: 0.8125rem;
+    color: #979797;
+    font-weight: 300;
+}

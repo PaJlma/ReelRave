@@ -18,7 +18,7 @@ interface IVideoCategoryProps {
 // TODO:
 // Как-нибудь сократить данную хуню снизу
 
-const VideoCategory: React.FunctionComponent<IVideoCategoryProps> = ({ category, ...props }) => {
+const VideoCategory: React.FC<IVideoCategoryProps> = ({ category, ...props }) => {
     let categoryToShow: React.ReactElement[] | null;
     switch (category) {
         case 'games':

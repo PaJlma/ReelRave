@@ -8,6 +8,7 @@ import VideoInfo from './VideoInfo/VideoInfo';
 import Mist from './../../UI/Mist/Mist';
 import { useDispatch } from 'react-redux';
 import optionsSlice from './../../../store/reducers/optionsSlice';
+import VideosSidebar from '../../UI/VideosSidebar/VideosSidebar';
 
 interface IVideoProps {
 }
@@ -24,17 +25,21 @@ const Video: React.FC<IVideoProps> = (props) => {
 
   return (
     <div className={styles.body}>
-      <Player video={video?.video} autoPlay={false} />
-      <VideoInfo 
-        time={video?.time} 
-        viewsCount={video?.viewsCount} 
-        videoID={id} 
-        title={video?.title} 
-        privateName={video?.channelPrivateName} 
-        description={video?.description}
-        commentaries={video?.commentaries}
-        category={video?.category}
-      />
+      <div className={styles.video}>
+        <Player video={video?.video} autoPlay={false} />
+        <VideoInfo 
+          time={video?.time} 
+          viewsCount={video?.viewsCount} 
+          videoID={id} 
+          title={video?.title} 
+          privateName={video?.channelPrivateName} 
+          description={video?.description}
+          commentaries={video?.commentaries}
+          category={video?.category}
+        />
+      </div>
+    
+      <VideosSidebar videoID={video?.id} />
       <Mist active={options.isSlidingSidebarActive} onClick={onMistClick} />
     </div>
   );

@@ -1,8 +1,14 @@
 .body {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 5.625rem;
+    justify-content: space-between;
+    padding: 1.5rem 5.625rem; 
+    height: 95vh; 
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
     gap: 0.625rem;
-    height: 95vh;
     overflow-y: auto;
 }
