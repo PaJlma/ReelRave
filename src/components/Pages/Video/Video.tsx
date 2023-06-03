@@ -6,6 +6,8 @@ import { useTSelector } from '../../../hooks/redux';
 import { useParams } from 'react-router-dom';
 import VideoInfo from './VideoInfo/VideoInfo';
 import Mist from './../../UI/Mist/Mist';
+import { useDispatch } from 'react-redux';
+import optionsSlice from './../../../store/reducers/optionsSlice';
 
 interface IVideoProps {
 }
@@ -13,7 +15,12 @@ interface IVideoProps {
 const Video: React.FC<IVideoProps> = (props) => {
   const { id } = useParams();
   const video = useTSelector(state => state.videos.list).find(video => video.id === id);
+  const dispatch = useDispatch();
   const options = useTSelector(state => state.options);
+
+  const onMistClick = (): void => {
+    dispatch(optionsSlice.actions.toggleSlidingSidebar());
+  }
 
   return (
     <div className={styles.body}>
@@ -28,7 +35,7 @@ const Video: React.FC<IVideoProps> = (props) => {
         commentaries={video?.commentaries}
         category={video?.category}
       />
-      <Mist active={options.isSlidingSidebarActive} />
+      <Mist active={options.isSlidingSidebarActive} onClick={onMistClick} />
     </div>
   );
 };
