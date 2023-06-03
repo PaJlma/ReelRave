@@ -15,6 +15,9 @@ interface IVideoCategoryProps {
     category?: string | undefined | null;
 }
 
+// TODO:
+// Как-нибудь сократить данную хуню снизу
+
 const VideoCategory: React.FunctionComponent<IVideoCategoryProps> = ({ category, ...props }) => {
     let categoryToShow: React.ReactElement[] | null;
     switch (category) {
