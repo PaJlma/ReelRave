@@ -1,6 +1,7 @@
 .body {
     display: flex;
     position: absolute;
+    top: 0;
     z-index: 1;
     left: -100%;
     flex-direction: column;
@@ -31,4 +32,10 @@
 
 .content:hover.content::-webkit-scrollbar {
     display: block;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
 }
