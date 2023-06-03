@@ -50,6 +50,7 @@
     display: block;
     width: 0.8rem;
     height: 0.8rem;
+    user-select: none;
 }
 
 .reputation p {
