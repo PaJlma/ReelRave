@@ -6,6 +6,7 @@
     height: 1.875rem;
     padding: 0 0.8rem;
     border-radius: 0.3125rem;
+    transition: 200ms;
 }
 
 .body img {
@@ -18,4 +19,8 @@
     font-size: 0.9375rem;
     color: #fff;
     font-weight: 300;
+}
+
+.body:hover {
+    background-color: #4A5253;
 }
