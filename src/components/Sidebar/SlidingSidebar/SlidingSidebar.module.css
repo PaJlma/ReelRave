@@ -2,13 +2,13 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    right: 100%;
+    left: -100%;
     flex-direction: column;
     min-width: 17.5rem;
     height: 100vh;
     padding: 0 0.75rem;
     background-color: #1c1f20;
-    transition: 200ms;
+    transition: 250ms;
 }
 
 .body.active {
