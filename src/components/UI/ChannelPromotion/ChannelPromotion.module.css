@@ -88,7 +88,7 @@
 }
 
 .subscribed:hover {
-    border: 1px solid #0bdd20;
+    border: 0.0625rem solid #0bdd20;
     color: #0bdd20;
 }
 
