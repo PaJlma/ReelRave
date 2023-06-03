@@ -21,8 +21,8 @@
 
 .avatar {
     display: block;
-    min-width: 2.25rem;
-    min-height: 2.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 .info {
