@@ -34,7 +34,7 @@ const VideoInfo: React.FC<IVideoInfoProps> = ({ title, description, category, vi
           }
         </div>
         <VideoDescription description={description} />
-        <VideoCommentaries commentaries={commentaries} />
+        <VideoCommentaries videoID={videoID} commentaries={commentaries} />
     </div>
   );
 };

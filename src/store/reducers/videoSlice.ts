@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { IVideoState } from '../../types/videoTypes';
 import videos from './../../assets/mock/videos';
 import { PayloadAction } from '@reduxjs/toolkit';
-import { IVideo } from './../../types/videoTypes';
+import { IVideo, ICommentary } from './../../types/videoTypes';
 
 const initialState: IVideoState = {
     list: videos,
@@ -53,6 +53,14 @@ const videoSlice = createSlice({
                         videoObject.likesCount--;
                     }
                 }
+            }
+        },
+
+        madeCommentary(state, action: PayloadAction<[ commentary: ICommentary, videoID: string | undefined ]>) {
+            const [commentary, videoID] = action.payload;
+            if (videoID) {
+                const video = state.list.find(video => video.id === videoID);
+                video?.commentaries.push(commentary);
             }
         },
     },

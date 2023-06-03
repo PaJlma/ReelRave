@@ -1,13 +1,15 @@
 .body {
-    width: 80%;
+    max-width: 37.5rem;
     display: flex;
     gap: 0.625rem;
 }
 
 .avatar {
     display: block;
-    width: 1.875rem;
-    height: 1.875rem;
+    min-width: 1.875rem;
+    min-height: 1.875rem;
+    max-width: 1.875rem;
+    max-height: 1.875rem;
 }
 
 .info {
@@ -37,6 +39,8 @@
 .text {
     font-size: 0.9375rem;
     font-weight: 300;
+    width: 37.5rem;
+    word-wrap: break-word;
 }
 
 .reputation {

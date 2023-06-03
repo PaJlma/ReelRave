@@ -5,10 +5,12 @@ import arrows from '../../../assets/images/UI/double-arrows.svg';
 
 interface ITextAreaProps {
     width: string;
-    onChange?: () => void;
+    onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
+    onClick?: () => void;
+    value?: string;
 }
 
-const TextArea: React.FC<ITextAreaProps> = ({ width, onChange, ...props }) => {
+const TextArea: React.FC<ITextAreaProps> = ({ width, onChange, value, onClick, ...props }) => {
     const textareaRef = React.useRef() as React.MutableRefObject<HTMLTextAreaElement>;
 
     const onKeyDownHandler = () => {
@@ -20,8 +22,8 @@ const TextArea: React.FC<ITextAreaProps> = ({ width, onChange, ...props }) => {
 
     return (
         <div style={{width: width}} className={styles.body}>
-            <textarea ref={textareaRef} onKeyDown={onKeyDownHandler} onChange={onChange} />
-            <button><img src={arrows} alt="arrow" /></button>
+            <textarea ref={textareaRef} onKeyDown={onKeyDownHandler} onChange={onChange} value={value} />
+            <button onClick={onClick}><img src={arrows} alt="arrow" /></button>
         </div>
     );
 };
