@@ -63,6 +63,11 @@ const videoSlice = createSlice({
                 video?.commentaries.push(commentary);
             }
         },
+
+        addInHistory(state, action: PayloadAction<IVideo>) {
+            state.history = state.history.filter(video => video.id !== action.payload.id);
+            state.history.push(action.payload)
+        },
     },
 });
 

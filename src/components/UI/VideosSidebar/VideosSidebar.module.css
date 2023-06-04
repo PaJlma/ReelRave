@@ -1,8 +1,16 @@
 .body {
-    height: 95vh;
-    width: 550px;
+    height: 91vh; 
+    width: 34.375rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125rem;
     overflow-y: auto;
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.body:hover::-webkit-scrollbar {
+    display: block;
 }
