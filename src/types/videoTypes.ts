@@ -28,3 +28,14 @@ export interface IVideoState {
     liked: IVideo[];
     disliked: IVideo[];
 };
+
+export enum categories {
+    'games' = 'Игры',
+    'music' = 'Музыка',
+    'memes' = 'Мемы',
+    'broadcasts' = 'Прямые трансляции',
+    'sport' = 'Спорт',
+    'pets' = 'Питомцы',
+    'wild' = 'Окружающий мир',
+    'blogs' = 'Блоги',
+}
