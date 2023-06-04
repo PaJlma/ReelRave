@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './History.module.css';
+import styles from '../DirectPage.module.css';
 import { useTSelector } from './../../../hooks/redux';
 import VideoMediumCase from '../../UI/VideoMediumCase/VideoMediumCase';
 
@@ -12,7 +12,7 @@ const History: React.FC<IHistoryProps> = (props) => {
 
   return (
     <div className={styles.body}>
-      <legend>Ваша история просмотров:</legend>
+      <legend>Ваша история просмотра:</legend>
 
       {
         videos.map(video => <VideoMediumCase 
