@@ -1,18 +1,17 @@
 import * as React from 'react';
-import styles from './History.module.css';
+import styles from './Liked.module.css';
 import { useTSelector } from './../../../hooks/redux';
 import VideoMediumCase from '../../UI/VideoMediumCase/VideoMediumCase';
 
-interface IHistoryProps {
+interface ILikedProps {
 }
 
-const History: React.FC<IHistoryProps> = (props) => {
-  const videos = useTSelector(state => state.videos.history);
+const Liked: React.FC<ILikedProps> = (props) => {
+  const videos = useTSelector(state => state.videos.liked);
   
-
   return (
     <div className={styles.body}>
-      <legend>Ваша история просмотров:</legend>
+      <legend>Вам понравилось:</legend>
 
       {
         videos.map(video => <VideoMediumCase 
@@ -29,4 +28,4 @@ const History: React.FC<IHistoryProps> = (props) => {
   );
 };
 
-export default History;
+export default Liked;
