@@ -1,0 +1,50 @@
+.body {
+    max-width: 49.5rem;
+    display: flex;
+    gap: 0.625rem;
+}
+
+.preview {
+    display: block;
+    width: 17.4375rem;
+    height: 9.75rem;
+    border-radius: 0.625rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1875rem;
+}
+
+.title {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.flex p {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    color: #979797;
+}
+
+.circle {
+    width: 0.1875rem;
+    height: 0.1875rem;
+    background-color: #979797;
+    border-radius: 100%;
+}
+
+.description {
+    word-wrap: break-word;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    color: #979797;
+}
