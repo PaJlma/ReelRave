@@ -32,7 +32,7 @@ const VideoMiniCase: React.FunctionComponent<IVideoMiniCaseProps> = (
             <img src={preview} alt={title} className={styles.preview} />
             <div className={styles.info}>
                 <h5 className={styles.title}>{ title }</h5>
-                <p className={styles.channel}>{ channel?.privateName }</p>
+                <p className={styles.channel}>{ channel?.publicName }</p>
                 <div className={styles.flex}>
                     <p>{`${viewsCount} ${getNoun(viewsCount, 'просмотр', 'просмотра', 'просмотров')}`}</p>
                     <p>{`${showTimeAgo(time)} назад`}</p>
