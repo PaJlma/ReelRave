@@ -22,7 +22,7 @@ const videos: IVideo[] = [
     {
         id: 'Lg4AM7WcWeg6',
         title: 'Славянский МГЕ прострел',
-        channelPrivateName: 'Mihailo',
+        channelPrivateName: 'AS_Bagirov',
         time: '2020 2 12 12 53 31',
         category: 'games',
         preview: mgePreview,

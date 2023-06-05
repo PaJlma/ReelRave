@@ -1,6 +1,6 @@
 import { IChannel } from './../../types/channelTypes';
 
-import mihailoAvatar from '../images/avatars/mihailo.png';
+import bagirovAvatar from '../images/avatars/bagirov.png';
 import fuckerAvatar from '../images/avatars/fucker.png';
 import assmolovAvatar from '../images/avatars/assmolov.png';
 import giAvatar from '../images/avatars/gi.png';
@@ -10,10 +10,10 @@ import shrekAvatar from '../images/avatars/shrek.png';
 
 const channels: IChannel[] = [
     {
-        publicName: 'Михайло Соколиное Око',
-        privateName: 'Mihailo',
+        publicName: 'Александр Сергеевич Багиров',
+        privateName: 'AS_Bagirov',
         isConfirmed: true,
-        avatar: mihailoAvatar,
+        avatar: bagirovAvatar,
         subscribesCount: 0,
         viewsCount: 0,
         videos: [],
