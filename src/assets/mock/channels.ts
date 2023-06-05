@@ -14,9 +14,10 @@ const channels: IChannel[] = [
         privateName: 'AS_Bagirov',
         isConfirmed: true,
         avatar: bagirovAvatar,
+        header: null,
         subscribesCount: 0,
         viewsCount: 0,
-        videos: [],
+        videos: ['Lg4AM7WcWeg6', 'sNlLWcCxNFIj'],
     },
 
     {
@@ -24,9 +25,10 @@ const channels: IChannel[] = [
         privateName: 'FUCKER',
         isConfirmed: true,
         avatar: fuckerAvatar,
+        header: null,
         subscribesCount: 0,
         viewsCount: 0,
-        videos: [],
+        videos: ['zOuk36HrKzp2', 'fK2JaePZDbig'],
     },
 
     {
@@ -34,9 +36,10 @@ const channels: IChannel[] = [
         privateName: 'Assmolov',
         isConfirmed: true,
         avatar: assmolovAvatar,
+        header: null,
         subscribesCount: 0,
         viewsCount: 0,
-        videos: [],
+        videos: ['oeXXd1IGPRNq'],
     },
 
     {
@@ -44,9 +47,10 @@ const channels: IChannel[] = [
         privateName: 'GI',
         isConfirmed: false,
         avatar: giAvatar,
+        header: null,
         subscribesCount: 0,
         viewsCount: 0,
-        videos: [],
+        videos: ['3ReIg5xOghLA'],
     },
 
     {
@@ -54,9 +58,10 @@ const channels: IChannel[] = [
         privateName: 'BillyHarrington_2018F',
         isConfirmed: false,
         avatar: billyAvatar,
+        header: null,
         subscribesCount: 0,
         viewsCount: 0,
-        videos: [],
+        videos: ['NdsYOvLNLQGc'],
     },
 
     {
@@ -64,9 +69,10 @@ const channels: IChannel[] = [
         privateName: 'Z_Barabanshiki',
         isConfirmed: false,
         avatar: zbarabanAvatar,
+        header: null,
         subscribesCount: 0,
         viewsCount: 0,
-        videos: [],
+        videos: ['2e7jp5nPVEvJ'],
     },
 
     {
@@ -74,9 +80,10 @@ const channels: IChannel[] = [
         privateName: 'Shrek',
         isConfirmed: false,
         avatar: shrekAvatar,
+        header: null,
         subscribesCount: 0,
         viewsCount: 0,
-        videos: [],
+        videos: ['YIp6FZtR1NZF'],
     },
 ];
 

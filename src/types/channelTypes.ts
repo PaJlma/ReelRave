@@ -5,9 +5,10 @@ export interface IChannel {
     privateName: string;
     isConfirmed: boolean;
     avatar: string;
+    header: string | null;
     subscribesCount: number;
     viewsCount: number;
-    videos: IVideo[];
+    videos: string[];
 };
 
 export interface IChannelState {
