@@ -8,6 +8,7 @@ import obamnaPreview from '../images/previews/soda.png';
 import cabronPreview from '../images/previews/cabron.png';
 import hornyPreview from '../images/previews/happy.png';
 import negrPreview from '../images/previews/negr.png';
+import bagirovPreview from '../images/previews/bagirov_preview.jpg';
 
 import mgeVideo from '../videos/mihailo.mp4';
 import walterVideo from '../videos/walterABC.mp4';
@@ -17,6 +18,7 @@ import obamnaVideo from '../videos/obamna.mp4';
 import cabronVideo from '../videos/cabron.mp4';
 import hornyVideo from '../videos/happy.mp4';
 import negrVideo from '../videos/negr.mp4';
+import bagirovVideo from '../videos/bagirov_trailer.mp4';
 
 const videos: IVideo[] = [
     {
@@ -140,6 +142,21 @@ const videos: IVideo[] = [
         description: `https://www.youtube.com/watch?v=bIcKKa2bVvg&ab_channel=MP3Nice`,
         commentaries: [],
     },
+
+    {
+        id: '2e7jp5nPVEvJ',
+        title: 'Трейлер канала Профессора Багирова.',
+        channelPrivateName: 'AS_Bagirov',
+        time: '2023 6 5 16 33 20',
+        category: null,
+        preview: bagirovPreview,
+        video: bagirovVideo,
+        viewsCount: 0,
+        likesCount: 0,
+        dislikesCount: 0,
+        description: `https://www.youtube.com/watch?v=bIcKKa2bVvg&ab_channel=MP3Nice`,
+        commentaries: [],
+    }
 ];
 
 export default videos;
