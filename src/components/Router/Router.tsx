@@ -10,6 +10,7 @@ import styles from './Router.module.css';
 import Liked from './../Pages/Liked/Liked';
 import CategoriesPage from './../Pages/Categories/Categories';
 import Recomendations from './../Pages/Recomendations/Recomendations';
+import ChannelPage from './../Pages/Channel/Channel';
 
 interface IRouterProps {
 }
@@ -23,6 +24,7 @@ const Router: React.FC<IRouterProps> = (props) => {
             <Route path='/liked' element={<DefaultSidebar />} />
             <Route path='/categories/:category' element={<DefaultSidebar />} />
             <Route path='/recomendations' element={<DefaultSidebar />} />
+            <Route path='/channel/:privateName' element={<DefaultSidebar />} />
             <Route path='/video/:id' element={<SlidingSidebar />} />
         </Routes>
         <Routes>
@@ -32,6 +34,7 @@ const Router: React.FC<IRouterProps> = (props) => {
             <Route path='/liked' element={<Liked />} />
             <Route path='/categories/:category' element={<CategoriesPage />} />
             <Route path='/recomendations' element={<Recomendations />} />
+            <Route path='/channel/:privateName' element={<ChannelPage />} />
         </Routes>
     </div>
   );
