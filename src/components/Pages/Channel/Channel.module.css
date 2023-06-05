@@ -17,52 +17,8 @@
 
 .main {
     width: 85%;
-}
-
-.channel {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.channel__item {
-    display: flex;
-    align-items: center;
-    gap: 0.9375rem;
-}
-
-.avatar {
-    display: block;
-    width: 8rem;
-    height: 8rem;
-}
-
-.channel__info {
     display: flex;
     flex-direction: column;
-    gap: 0.3125rem;
+    gap: 3.125rem;
 }
 
-.channel__info h5 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #fff;
-}
-
-.channel__info p {
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: #979797;
-}
-
-.channel__info .flex {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-}
-
-.subscribeButton {
-    height: 4rem;
-    width: 11.25rem;
-}
