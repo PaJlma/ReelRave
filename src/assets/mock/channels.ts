@@ -8,13 +8,15 @@ import billyAvatar from '../images/avatars/billy.png';
 import zbarabanAvatar from '../images/avatars/usec.png';
 import shrekAvatar from '../images/avatars/shrek.png';
 
+import bagirovHeader from '../headers/bagirov.png';
+
 const channels: IChannel[] = [
     {
         publicName: 'Александр Сергеевич Багиров',
         privateName: 'AS_Bagirov',
         isConfirmed: true,
         avatar: bagirovAvatar,
-        header: null,
+        header: bagirovHeader,
         subscribesCount: 0,
         viewsCount: 0,
         videos: ['Lg4AM7WcWeg6', 'sNlLWcCxNFIj'],
