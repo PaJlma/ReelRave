@@ -6,6 +6,8 @@ import { useDispatch } from 'react-redux';
 import channelSlice from '../../../store/reducers/channelSlice';
 import ChannelNavigation from './ChannelNavigation/ChannelNavigation';
 import ChannelPagePromotion from './ChannelPagePromotion/ChannelPagePromotion';
+import ChannelVideos from './ChannelVideos/ChannelVideos';
+import channels from './../../../assets/mock/channels';
 interface IChannelPageProps {
 }
 
@@ -34,6 +36,8 @@ const ChannelPage: React.FC<IChannelPageProps> = (props) => {
                 <ChannelPagePromotion channel={thisChannel} />
 
                 <ChannelNavigation channelPrivateName={thisChannel?.privateName} />
+
+                <ChannelVideos channel={thisChannel} />
             </div>
         </div>
     );
