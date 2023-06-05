@@ -9,7 +9,7 @@ interface ISubscribesNotFoundProps {
 const SubscribesNotFound: React.FC<ISubscribesNotFoundProps> = (props) => {
   return (
     <div className={styles.body}>
-        <img src={sleepyCatPNG} alt="sleepy ass cat" title='ZzZzZz... Sleepy ass cat... ZzZzZz...' />
+        {/* <img src={sleepyCatPNG} alt="sleepy ass cat" title='ZzZzZz... Sleepy ass cat... ZzZzZz...' /> */}
         <p>Вы ни на кого не подписаны!</p>
     </div>
   );

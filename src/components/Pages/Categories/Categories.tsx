@@ -4,13 +4,15 @@ import { useParams } from 'react-router-dom';
 import { useTSelector } from './../../../hooks/redux';
 import VideoMediumCase from '../../UI/VideoMediumCase/VideoMediumCase';
 import VideoCategory from './../../UI/VideoCategory/VideoCategory';
+import EmptyList from '../../UI/EmptyList/EmptyList';
 
 interface ICategoriesPageProps {
 }
 
 const CategoriesPage: React.FC<ICategoriesPageProps> = (props) => {
-    const videos = useTSelector(state => state.videos.list);
     const  {category} = useParams();
+    const videos = useTSelector(state => state.videos.list)
+                    .filter(video => video.category === category);
 
     // TODO:
     // Как-нибудь сократить данную хуню снизу
@@ -58,7 +60,17 @@ const CategoriesPage: React.FC<ICategoriesPageProps> = (props) => {
             <legend>{ categoryLegend }</legend>
 
             {
-                videos.filter(video => video.category === category).map(video => <VideoMediumCase 
+                videos.length === 0
+                
+                ?
+
+                <div className={styles.centered}>
+                    <EmptyList />
+                </div>
+
+                :
+
+                videos.map(video => <VideoMediumCase 
                     key={video.id}
                     videoID={video.id}
                     channelPrivateName={video.channelPrivateName}
