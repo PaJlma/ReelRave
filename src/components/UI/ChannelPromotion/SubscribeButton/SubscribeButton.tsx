@@ -12,6 +12,7 @@ interface ISubscribeButtonProps {
 }
 
 const SubscribeButton: React.FC<ISubscribeButtonProps> = ({ channel, ...props }) => {
+    const thisChannel = channel;
     const subscribes = useTSelector(state => state.channels.subscribed);
     const dispatch = useDispatch();
 
@@ -24,7 +25,7 @@ const SubscribeButton: React.FC<ISubscribeButtonProps> = ({ channel, ...props })
     return (
         <div className={styles.body}>
             {
-                subscribes.some(channel => channel.privateName === channel?.privateName)
+                subscribes.some(channel => channel.privateName === thisChannel?.privateName)
                 ?
                 <button 
                 className={styles.subscribed} 
