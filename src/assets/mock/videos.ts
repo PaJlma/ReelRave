@@ -144,7 +144,7 @@ const videos: IVideo[] = [
     },
 
     {
-        id: '2e7jp5nPVEvJ',
+        id: 'sNlLWcCxNFIj',
         title: 'Трейлер канала Профессора Багирова.',
         channelPrivateName: 'AS_Bagirov',
         time: '2023 6 5 16 33 20',
