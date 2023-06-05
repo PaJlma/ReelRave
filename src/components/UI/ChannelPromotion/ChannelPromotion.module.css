@@ -7,6 +7,8 @@
     display: block;
     min-width: 2.5rem;
     min-height: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
     user-select: none;
 }
 
@@ -43,65 +45,7 @@
     font-weight: 400;
 }
 
-.subscribe {
-    color: #000;
-    display: block;
+.subscribeButton {
     height: 2.5rem;
     padding: 0 1rem;
-    background-color: #09C61C;
-    border: 0.0625rem solid #09C61C;
-    font-weight: 300;
-    font-size: 0.85rem;
-    border-radius: 0.3125rem;
-    user-select: none;
-    transition: 200ms;
-}
-
-.subscribed {
-    color: #09C61C;
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    height: 2.5rem;
-    padding: 0 1rem;
-    background-color: transparent;
-    border: 0.0625rem solid #09C61C;
-    font-weight: 300;
-    font-size: 0.85rem;
-    border-radius: 0.3125rem;
-    user-select: none;
-    transition: 200ms;
-}
-
-.checked {
-    display: block;
-    width: 0.7813rem;
-    height: 0.7813rem;
-    animation-name: checkedAppears;
-    animation-duration: 1.5s;
-    /* animation-timing-function: linear; */
-}
-
-.subscribe:hover {
-    background-color: #0bdd20;
-    border: 0.0625rem solid #0bdd20;
-}
-
-.subscribed:hover {
-    border: 0.0625rem solid #0bdd20;
-    color: #0bdd20;
-}
-
-@keyframes checkedAppears {
-    from {
-        transform: scale(100%) rotate(0deg);
-    }
-
-    50% {
-        transform: scale(700%) rotate(360deg);
-    }
-
-    to {
-        transform: scale(100%) rotate(720deg);
-    }
 }

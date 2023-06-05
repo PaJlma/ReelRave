@@ -8,6 +8,7 @@ import confirmedSVG from '../../../assets/images/UI/confirmed.svg';
 import checkSVG from '../../../assets/images/UI/check_green.svg';
 import { useDispatch } from 'react-redux';
 import channelSlice from './../../../store/reducers/channelSlice';
+import SubscribeButton from './SubscribeButton/SubscribeButton';
 
 interface IChannelPromotionProps {
     privateName?: string;
@@ -42,18 +43,9 @@ const ChannelPromotion: React.FC<IChannelPromotionProps> = ({ privateName, ...pr
                     ${getNoun(thisChannel?.subscribesCount, 'подписчик', 'подписчика', 'подписчиков')}`}
                 </p>
             </div>
-            {   
-                subscribes.some(channel => channel.privateName === thisChannel?.privateName)
-                ?
-                <button 
-                className={styles.subscribed} 
-                onClick={subscribeClickHandler} >
-                    Вы подписаны 
-                    <img src={checkSVG} className={styles.checked} alt="checked" />
-                </button>
-                :
-                <button className={styles.subscribe} onClick={subscribeClickHandler} >Подписаться</button>
-            }
+            <div className={styles.subscribeButton}>
+                <SubscribeButton channel={thisChannel} />
+            </div>
         </div>
     );
 };
