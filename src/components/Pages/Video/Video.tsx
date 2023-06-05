@@ -34,7 +34,7 @@ const Video: React.FC<IVideoProps> = (props) => {
   return (
     <div className={styles.body}>
       <div className={styles.video}>
-        <Player video={video?.video} autoPlay={false} />
+        <Player video={video?.video} autoPlay={true} />
         <VideoInfo 
           time={video?.time} 
           viewsCount={video?.viewsCount} 
