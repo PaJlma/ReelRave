@@ -36,11 +36,17 @@
         &:hover {
             border: 0.0625rem solid  $brand-color_lighten;
             color:  $brand-color_lighten;
+
+            .checked path {
+                @extend %transition-delay;
+                fill: $brand-color_lighten;      
+            }
         }
     }
 
     .checked {
         @include size(0.7813rem, 0.7813rem);
+        @extend %transition-delay;
         display: block;
         animation-name: checkedAppears;
         animation-duration: 1.5s;
