@@ -11,6 +11,8 @@ import Liked from './../Pages/Liked/Liked';
 import CategoriesPage from './../Pages/Categories/Categories';
 import Recomendations from './../Pages/Recomendations/Recomendations';
 import ChannelPage from './../Pages/Channel/Channel';
+import Registration from './../Pages/Registration/Registration';
+import Login from './../Pages/Login/Login';
 
 interface IRouterProps {
 }
@@ -35,6 +37,8 @@ const Router: React.FC<IRouterProps> = (props) => {
             <Route path='/categories/:category' element={<CategoriesPage />} />
             <Route path='/recomendations' element={<Recomendations />} />
             <Route path='/channel/:privateName' element={<ChannelPage />} />
+            <Route path='/registration' element={<Registration />} />
+            <Route path='/login' element={<Login />} />
         </Routes>
     </div>
   );
