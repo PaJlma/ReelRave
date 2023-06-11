@@ -5,7 +5,7 @@
 .body {
     @include flexbox(row, none, center);
     @include size(34rem, 1.875rem );
-    border: 0.0625rem solid #09C61C;
+    border: 0.0625rem solid $brand-color;
     border-radius: 0.3125rem;
 
     input {
@@ -19,7 +19,7 @@
         @include size(3.125rem, 100%);
         @include flexbox(row, center, center);
         @extend %transition-delay;
-        background-color: #09C61C;
+        background-color: $brand-color;
 
         img {
             @include size(0.75rem, 0.75rem);

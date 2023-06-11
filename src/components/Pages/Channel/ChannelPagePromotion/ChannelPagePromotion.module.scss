@@ -2,7 +2,7 @@
 @import '../../../../scss/mixins.scss';
 
 .body {
-    @include flexbox(row, center, center);
+    @include flexbox(row, space-between, center);
     width: 100%;
 
     .item {

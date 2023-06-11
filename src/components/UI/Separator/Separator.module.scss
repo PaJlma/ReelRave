@@ -1,5 +1,7 @@
+@import '../../../scss/variables.scss';
+
 .body {
     min-height: 0.0625rem;
-    background-color: #089416;
+    background-color: $brand-color;
     width: 100%;
 }

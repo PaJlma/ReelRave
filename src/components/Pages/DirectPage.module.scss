@@ -4,6 +4,7 @@
 .body {
     @include flexbox(column, none, none, 0.8rem);
     @include size(100%, 93.5vh);
+    position: relative;
     padding: 1.0625rem 3.5rem 0 3.5rem;
     overflow-y: auto;
 
