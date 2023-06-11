@@ -9,7 +9,6 @@ import Mist from './../../UI/Mist/Mist';
 import { useDispatch } from 'react-redux';
 import optionsSlice from './../../../store/reducers/optionsSlice';
 import VideosSidebar from '../../UI/VideosSidebar/VideosSidebar';
-import { useSelector } from 'react-redux';
 import videoSlice from './../../../store/reducers/videoSlice';
 
 interface IVideoProps {

@@ -3,7 +3,6 @@ import styles from './SubscribeButton.module.scss';
 import { IChannel } from './../../../../types/channelTypes';
 import { useTSelector } from '../../../../hooks/redux';
 
-import checkSVG from '../../../../assets/images/UI/check_green.svg';
 import channelSlice from '../../../../store/reducers/channelSlice';
 import { useDispatch } from 'react-redux';
 

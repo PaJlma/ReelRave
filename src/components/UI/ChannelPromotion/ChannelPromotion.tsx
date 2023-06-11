@@ -5,9 +5,6 @@ import styles from './ChannelPromotion.module.scss';
 import getNoun from './../../../scripts/getNoun';
 
 import confirmedSVG from '../../../assets/images/UI/confirmed.svg';
-import checkSVG from '../../../assets/images/UI/check_green.svg';
-import { useDispatch } from 'react-redux';
-import channelSlice from './../../../store/reducers/channelSlice';
 import SubscribeButton from './SubscribeButton/SubscribeButton';
 
 interface IChannelPromotionProps {
@@ -16,15 +13,7 @@ interface IChannelPromotionProps {
 
 const ChannelPromotion: React.FC<IChannelPromotionProps> = ({ privateName, ...props }) => {
     const channels = useTSelector(state => state.channels.list);
-    const subscribes = useTSelector(state => state.channels.subscribed);
     const thisChannel = channels.find(channel => channel.privateName === privateName);
-    const dispatch = useDispatch();
-
-    const subscribeClickHandler = (): void => {
-        if (thisChannel) {
-            dispatch(channelSlice.actions.subscribe(thisChannel));
-        }
-    }
 
     return (
         <div className={styles.body}>

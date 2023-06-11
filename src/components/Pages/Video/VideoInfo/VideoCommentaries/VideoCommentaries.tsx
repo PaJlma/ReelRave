@@ -3,7 +3,6 @@ import styles from './VideoCommentaries.module.scss';
 import { ICommentary } from './../../../../../types/videoTypes';
 import getNoun from './../../../../../scripts/getNoun';
 import VideoCommentary from '../../../../UI/VideoCommentary/VideoCommentary';
-import { useTSelector } from './../../../../../hooks/redux';
 import TextArea from '../../../../UI/TextArea/TextArea';
 import { useDispatch } from 'react-redux';
 import videoSlice from './../../../../../store/reducers/videoSlice';
