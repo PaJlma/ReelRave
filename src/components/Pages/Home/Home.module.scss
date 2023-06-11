@@ -1,0 +1,14 @@
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include size(100%, 100vh);
+    @include flexbox(row, center);
+    margin-top: 1rem;
+    overflow: auto;
+
+    .content {
+        @include size(90%, 115vh);
+        @include flexbox(row, center, none, 0.8rem);
+        flex-wrap: wrap;
+    }
+}

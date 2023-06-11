@@ -1,0 +1,34 @@
+@import '../../../scss/mixins.scss';
+
+.body {
+    display: none;
+    flex-direction: column;
+    min-width: 16rem;
+    height: 95vh;
+
+    &.active {
+        display: flex;
+    }
+    
+    
+    
+    .content {
+        @include flexbox(column, none, none, 1.25rem);
+        margin-top: 1rem;
+        width: 100%;
+        padding-right: 0.3125rem;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        &:hover {
+            &::-webkit-scrollbar {
+                display: block;
+            }
+        }
+    }
+
+}
+

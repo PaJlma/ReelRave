@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './VideoMediumCase.module.css';
+import styles from './VideoMediumCase.module.scss';
 import { NavLink } from 'react-router-dom';
 import { channel } from 'redux-saga';
 import { useTSelector } from './../../../hooks/redux';

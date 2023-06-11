@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './VideoDescription.module.css';
+import styles from './VideoDescription.module.scss';
 
 interface IVideoDescriptionProps {
     description?: string;

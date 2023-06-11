@@ -1,0 +1,35 @@
+@mixin size($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+@mixin strict-size($width, $heigth) {
+    min-width: $width;
+    min-height: $heigth;
+    max-width: $width;
+    max-height: $heigth;
+}
+
+@mixin flexbox($flxd: row, $jsc: flex-start, $alitms: flex-start, $gap: 0) {
+    display: flex;
+    flex-direction: $flxd;
+    justify-content: $jsc;
+    align-items: $alitms;
+    gap: $gap;
+}
+
+@mixin font($size, $color, $weigth: 400, $text-align: left) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weigth;
+    text-align: $text-align;
+}
+
+@mixin positioning($position, $top, $right, $bottom, $left, $z-index: 0) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+}

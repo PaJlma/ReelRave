@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './SlidingSidebar.module.css';
+import styles from './SlidingSidebar.module.scss';
 import Separator from '../../UI/Separator/Separator';
 import { useTSelector } from './../../../hooks/redux';
 import SubscribesNotFound from '../../UI/SubscribesNotFound/SubscribesNotFound';

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTSelector } from '../../../hooks/redux';
 import getNoun from '../../../scripts/getNoun';
 import showTimeAgo from '../../../scripts/timeManager';
-import styles from './VideoMiniCase.module.css';
+import styles from './VideoMiniCase.module.scss';
 
 interface IVideoMiniCaseProps {
     videoID?: string;

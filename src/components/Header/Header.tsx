@@ -1,6 +1,6 @@
 import * as React from 'react';
 import RoundButton from '../UI/RoundButton/RoundButton';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 import burgerMenuSVG from '../../assets/images/UI/burger-menu.svg';
 import settingsSVG from '../../assets/images/UI/settings.svg';

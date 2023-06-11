@@ -1,0 +1,11 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/mixins.scss';
+
+.body {
+    width: 100%;
+
+    legend {
+        @include font(0.9375rem, $light-font-color, 300);
+        margin-bottom: 0.9375rem;
+    }
+}

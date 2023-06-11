@@ -1,0 +1,34 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    @include flexbox(row, none, center);
+    @include size(34rem, 1.875rem );
+    border: 0.0625rem solid #09C61C;
+    border-radius: 0.3125rem;
+
+    input {
+        @include size(100%, 100%);
+        @include font(0.8rem, $light-font-color);
+        display: block;
+        padding: 0 1rem;
+    }
+
+    button {
+        @include size(3.125rem, 100%);
+        @include flexbox(row, center, center);
+        @extend %transition-delay;
+        background-color: #09C61C;
+
+        img {
+            @include size(0.75rem, 0.75rem);
+            display: block;
+            user-select: none;
+        }
+
+        &:hover {
+            background-color: $brand-color_lighten;
+        }
+    }
+}

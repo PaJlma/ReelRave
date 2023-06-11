@@ -1,0 +1,7 @@
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include size(7rem, 1.375rem);
+    display: block;
+    user-select: none;
+}

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './SidebarCase.module.css';
+import styles from './SidebarCase.module.scss';
 import { NavLink } from 'react-router-dom';
 
 interface ISidebarCaseProps {

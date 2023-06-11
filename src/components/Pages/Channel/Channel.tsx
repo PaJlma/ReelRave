@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Channel.module.css';
+import styles from './Channel.module.scss';
 import { useParams } from 'react-router-dom';
 import { useTSelector } from '../../../hooks/redux';
 import { useDispatch } from 'react-redux';
@@ -7,7 +7,6 @@ import channelSlice from '../../../store/reducers/channelSlice';
 import ChannelNavigation from './ChannelNavigation/ChannelNavigation';
 import ChannelPagePromotion from './ChannelPagePromotion/ChannelPagePromotion';
 import ChannelVideos from './ChannelVideos/ChannelVideos';
-import channels from './../../../assets/mock/channels';
 interface IChannelPageProps {
 }
 

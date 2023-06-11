@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import styles from './Button.module.css';
+import styles from './Button.module.scss';
 
 interface IButtonProps {
     isNav: boolean;

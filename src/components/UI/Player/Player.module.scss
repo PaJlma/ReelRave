@@ -1,0 +1,11 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include size(73.625rem, 41.4375rem);
+
+    video {
+        @include size(100%, 100%);
+        display: block;
+    }
+}

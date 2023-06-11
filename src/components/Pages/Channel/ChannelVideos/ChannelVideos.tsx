@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './ChannelVideos.module.css';
+import styles from './ChannelVideos.module.scss';
 import { IChannel } from './../../../../types/channelTypes';
 import { useTSelector } from '../../../../hooks/redux';
 import { IVideo } from '../../../../types/videoTypes';

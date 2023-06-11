@@ -1,0 +1,21 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    @include flexbox(row, center, center);
+    @include size(2rem, 2rem);
+    @extend %transition-delay;
+    border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
+
+    img {
+        @include size(50%, 50%);
+        display: block;
+    }
+
+    &:hover {
+        background-color: $secondary-color_lighten;
+    }
+}

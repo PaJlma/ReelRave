@@ -1,0 +1,16 @@
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    @include positioning(absolute, 0, none, none, 0);
+    @include size(100%, 100vh);
+    @extend %transition-delay;
+    background-color: rgba(38, 41, 42, 0.8);
+    opacity: 0;
+    pointer-events: none;
+
+    &.active {
+        pointer-events: all;
+        opacity: 1;
+    }
+}

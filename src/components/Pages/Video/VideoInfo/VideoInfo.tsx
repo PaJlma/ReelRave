@@ -1,6 +1,6 @@
 import * as React from 'react';
 import VideoNavigation from '../VideoNavigation/VideoNavigation';
-import styles from './VideoInfo.module.css';
+import styles from './VideoInfo.module.scss';
 import getNoun from './../../../../scripts/getNoun';
 import showTimeAgo from './../../../../scripts/timeManager';
 import VideoDescription from './VideoDescription/VideoDescription';

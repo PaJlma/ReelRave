@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './SidebarGroup.module.css';
+import styles from './SidebarGroup.module.scss';
 
 interface ISidebarGroupProps {
     children: React.ReactElement | React.ReactNode;

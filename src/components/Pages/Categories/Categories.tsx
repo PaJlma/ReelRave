@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from '../DirectPage.module.css';
+import styles from '../DirectPage.module.scss';
 import { useParams } from 'react-router-dom';
 import { useTSelector } from './../../../hooks/redux';
 import VideoMediumCase from '../../UI/VideoMediumCase/VideoMediumCase';

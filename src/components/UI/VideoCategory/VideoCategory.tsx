@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './VideoCategory.module.css';
+import styles from './VideoCategory.module.scss';
 
 import sportSVG from '../../../assets/images/UI/sport.svg';
 import gamesSVG from '../../../assets/images/UI/games.svg';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './VideoCommentaries.module.css';
+import styles from './VideoCommentaries.module.scss';
 import { ICommentary } from './../../../../../types/videoTypes';
 import getNoun from './../../../../../scripts/getNoun';
 import VideoCommentary from '../../../../UI/VideoCommentary/VideoCommentary';

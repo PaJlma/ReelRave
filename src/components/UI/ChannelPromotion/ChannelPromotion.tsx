@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTSelector } from '../../../hooks/redux';
-import styles from './ChannelPromotion.module.css';
+import styles from './ChannelPromotion.module.scss';
 import getNoun from './../../../scripts/getNoun';
 
 import confirmedSVG from '../../../assets/images/UI/confirmed.svg';

@@ -1,0 +1,16 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(column, none, center, 0.625rem);
+
+    h5 {
+        @include font(1.1875rem, $secondary-font-color,  500, center);
+    }
+
+    img {
+        @include size(4.6875rem, 2.875rem);
+        display: block;
+        filter: opacity(80%);
+    }
+}

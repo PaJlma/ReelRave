@@ -1,0 +1,62 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/mixins.scss';
+@import '../../../../scss/blueprints.scss';
+
+.body {
+    @include size(100%, 100%);
+    
+    .subscribe {
+        @include size(100%, 100%);
+        @include font(0.85rem, $dark-font-color, 300, center);
+        @extend %transition-delay;
+        display: block;
+        padding: 0 1rem;
+        background-color: $brand-color;
+        border: 0.0625rem solid $brand-color;
+        border-radius: 0.3125rem;
+        user-select: none;
+
+        &:hover {
+            background-color: $brand-color_lighten;
+            border: 0.0625rem solid  $brand-color_lighten;
+        }
+    }
+
+    .subscribed {
+        @include flexbox(row, center, center, 0.625rem);
+        @include font(0.85rem, $brand-color, 300, center);
+        @include size(100%, 100%);
+        @extend %transition-delay;
+        padding: 0 1rem;
+        background-color: transparent;
+        border: 0.0625rem solid $brand-color;
+        border-radius: 0.3125rem;
+        user-select: none;
+
+        &:hover {
+            border: 0.0625rem solid  $brand-color_lighten;
+            color:  $brand-color_lighten;
+        }
+    }
+
+    .checked {
+        @include size(0.7813rem, 0.7813rem);
+        display: block;
+        animation-name: checkedAppears;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes checkedAppears {
+        from {
+            transform: scale(100%) rotate(0deg);
+        }
+
+        50% {
+            transform: scale(700%) rotate(360deg);
+        }
+
+        to {
+            transform: scale(100%) rotate(720deg);
+        }
+    }
+}

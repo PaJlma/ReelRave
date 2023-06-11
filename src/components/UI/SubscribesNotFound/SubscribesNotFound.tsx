@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './SubscribesNotFound.module.css';
+import styles from './SubscribesNotFound.module.scss';
 
 import attentionSVG from '../../../assets/images/UI/attention.svg';
 

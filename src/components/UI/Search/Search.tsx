@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Search.module.css';
+import styles from './Search.module.scss';
 
 import searchSVG from '../../../assets/images/UI/search.svg';
 

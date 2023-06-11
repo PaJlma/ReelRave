@@ -1,0 +1,15 @@
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include size(34.375rem, 91vh);
+    @include flexbox(column, none, none, 0.3125rem);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    &:hover::-webkit-scrollbar {
+        display: block;
+    }
+}

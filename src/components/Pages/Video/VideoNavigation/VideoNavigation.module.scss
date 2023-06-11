@@ -1,0 +1,5 @@
+@import '../../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(row, space-between, center);
+}

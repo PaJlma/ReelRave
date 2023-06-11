@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './SubscribeButton.module.css';
+import styles from './SubscribeButton.module.scss';
 import { IChannel } from './../../../../types/channelTypes';
 import { useTSelector } from '../../../../hooks/redux';
 

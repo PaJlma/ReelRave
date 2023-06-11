@@ -1,0 +1,18 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(column, none, none, 0.9375rem);
+
+    .title {
+        @include font(1.3rem, $light-font-color, 550);
+    }
+    
+    .flex {
+        @include flexbox(row, none, center, 0.5rem);
+
+        p {
+            @include font(0.9rem, $light-font-color, 600);
+        }
+    }
+}

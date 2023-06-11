@@ -1,0 +1,39 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    @include flexbox(column);
+    @include positioning(absolute, 0, none, none, -100%, 1);
+    min-width: 17.5rem;
+    height: 100vh;
+    padding: 0 0.75rem;
+    background-color: $secondary-color;
+    transition: 250ms;
+
+    &.active {
+        left: 0;
+    }
+    
+    .content {
+        @include flexbox(column, none, none, 1.25rem);
+        margin-top: 1rem;
+        width: 100%;
+        padding-right: 0.3125rem;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &:hover {
+            &::-webkit-scrollbar {
+                display: block;
+            }
+        } 
+    }
+    
+    .flex {
+        @include flexbox(row, none, center, 1.25rem);
+    }
+}

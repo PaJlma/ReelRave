@@ -1,0 +1,23 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/mixins.scss';
+@import '../../../../scss/blueprints.scss';
+
+.body {
+    @include size(100%, 1.875rem);
+    display: flex;
+
+    .item {
+        @include font(0.9375rem, $secondary-font-color, 500, center);
+        @extend %transition-delay;
+        width: 100%;
+        border-bottom: 0.125rem solid $secondary-font-color;
+
+        &:hover {
+            border-bottom: 0.125rem solid $light-font-color;
+            color: $light-font-color;
+        }
+    }
+}
+
+
+

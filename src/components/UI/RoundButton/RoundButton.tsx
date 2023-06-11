@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './RoundButton.module.css';
+import styles from './RoundButton.module.scss';
 
 interface IRoundButtonProps {
     children: React.ReactChild | React.ReactNode;

@@ -1,0 +1,46 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    @include flexbox(row, none, center);
+    background-color: $secondary-color_lighten;
+    height: 100%;
+    border-radius: 0.3125rem;
+    user-select: none;
+
+    .like {
+        @include flexbox(row, center, center, 0.4375rem);
+        @extend %transition-delay;
+        border-radius: 0.3125rem 0 0 0.3125rem;
+        height: 100%;
+        padding: 0 1.25rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4a5253;
+        }
+    }
+    
+    .dislike {
+        @include flexbox(row, center, center, 0.4375rem);
+        @extend %transition-delay;
+        border-radius: 0 0.3125rem 0.3125rem 0;
+        height: 100%;
+        padding: 0 1.25rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4a5253;
+        }
+    }
+
+    img {
+        @include size(1.25rem, 1.25rem);
+        display: block;
+    }
+
+    p {
+        @include font(0.875rem, $light-font-color, 300);
+    }
+}

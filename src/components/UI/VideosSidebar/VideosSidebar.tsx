@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useTSelector } from '../../../hooks/redux';
 import VideoMiniCase from '../VideoMiniCase/VideoMiniCase';
-import styles from './VideosSidebar.module.css';
+import styles from './VideosSidebar.module.scss';
 
 interface IVideosSidebarProps {
     videoID?: string;

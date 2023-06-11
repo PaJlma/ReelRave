@@ -1,0 +1,50 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.body {
+    max-width: 37.5rem;
+    display: flex;
+    gap: 0.625rem;
+
+    .avatar {
+        @include strict-size(1.875rem, 1.875rem);
+        display: block;
+    }
+
+    .info {
+        @include flexbox(column, none, none, 0.3125rem);
+    }
+    
+    .flex {
+        @include flexbox(row, none, center, 0.625rem);
+
+        p {
+            @include font(0.8125rem, $secondary-font-color, 300);
+        }
+
+        h5 {
+            @include font(0.9375rem, $light-font-color, 500);
+        }
+    }
+    
+    .text {
+        @include font(0.9375rem, $light-font-color, 300);
+        width: 37.5rem;
+        word-wrap: break-word;
+    }
+    
+    .reputation {
+        @include flexbox(row, none, center, 0.3rem);
+        cursor: pointer;
+
+        img {
+            @include size(0.8rem, 0.8rem);
+            display: block;
+            user-select: none;
+        }
+
+        p {
+            @include font(0.9375rem, $light-font-color, 300);
+        }
+    }
+}

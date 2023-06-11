@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './ChannelNavigation.module.css';
+import styles from './ChannelNavigation.module.scss';
 import { NavLink } from 'react-router-dom';
 
 interface IChannelNavigationProps {

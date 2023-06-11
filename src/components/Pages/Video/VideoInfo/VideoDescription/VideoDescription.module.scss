@@ -1,0 +1,15 @@
+@import '../../../../../scss/variables.scss';
+@import '../../../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(column, none, none, 0.625rem);
+    width: 100%;
+
+    h5 {
+        @include font(1.125rem, $light-font-color, 500);
+    }
+
+    p {
+        @include font(0.9375rem, $secondary-font-color, 300);
+    }
+}

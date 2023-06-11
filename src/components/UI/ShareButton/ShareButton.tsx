@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './ShareButton.module.css';
+import styles from './ShareButton.module.scss';
 
 import shareSVG from '../../../assets/images/UI/share.svg';
 

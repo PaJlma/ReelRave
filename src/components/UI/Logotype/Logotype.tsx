@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Logotype.module.css';
+import styles from './Logotype.module.scss';
 
 import logotype from '../../../assets/images/UI/logotype.svg';
 import { NavLink } from 'react-router-dom';

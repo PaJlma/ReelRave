@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './VideoCommentary.module.css';
+import styles from './VideoCommentary.module.scss';
 import { ICommentary } from './../../../types/videoTypes';
 import channels from './../../../assets/mock/channels';
 import { useTSelector } from './../../../hooks/redux';

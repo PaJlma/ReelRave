@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './ChannelPagePromotion.module.css';
+import styles from './ChannelPagePromotion.module.scss';
 import { IChannel } from '../../../../types/channelTypes';
 import SubscribeButton from '../../../UI/ChannelPromotion/SubscribeButton/SubscribeButton';
 import getNoun from '../../../../scripts/getNoun';

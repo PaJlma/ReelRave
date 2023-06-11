@@ -1,0 +1,19 @@
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include size(100%, 90vh);
+    @include flexbox(column, none, center, 1.1875rem);
+    padding: 1.0625rem 0 0 1.5625rem;
+    overflow-y: auto;
+
+    .header {
+        @include size(101rem, 15.1875rem);
+        display: block;
+        align-self: flex-end;
+    }
+    
+    .main {
+        @include flexbox(column, none, none, 3.125rem);
+        width: 85%;
+    }
+}

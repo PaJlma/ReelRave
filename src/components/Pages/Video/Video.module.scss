@@ -1,0 +1,21 @@
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(row, none, none, 3.125rem);
+    padding: 1.5rem 5.625rem; 
+    height: 95vh; 
+
+    .video {
+        @include flexbox(column, none, none, 0.625rem);
+        @include size(74.375rem, 90vh);
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        &:hover::-webkit-scrollbar {
+            display: block;
+        }
+    }
+}

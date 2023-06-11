@@ -1,0 +1,33 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    display: flex;
+
+    textarea {
+        @include size(71.5625rem, 1.5625rem);
+        display: block;
+        resize: none;
+        border: none;
+        overflow: hidden;
+        outline: none;
+        border-bottom: 0.0625rem solid #09C61C;
+    }
+
+    button {
+        @include size(1.875rem, 100%);
+        @include flexbox(row, center, center);
+        @extend %transition-delay;
+        background-color: $brand-color;
+
+        &:hover {
+            background-color: $brand-color_lighten;
+        }
+    }
+
+    img {
+        @include size(0.75rem, 0.5625rem);
+        display: block;
+    }
+}

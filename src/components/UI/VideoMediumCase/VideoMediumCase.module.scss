@@ -1,0 +1,41 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.body {
+    max-width: 49.5rem;
+    display: flex;
+    gap: 0.625rem;
+
+    .preview {
+        @include size(17.4375rem, 9.75rem);
+        display: block;
+        border-radius: 0.625rem;
+    }
+
+    .info {
+        @include flexbox(column, none, none, 0.1875rem);
+    }
+    
+    .title {
+        @include font(0.9375rem, $light-font-color, 500);
+    }
+    
+    .flex {
+        @include flexbox(row, none, center, 0.625rem);
+
+        p {
+            @include font(0.8125rem, $secondary-font-color, 300);
+        }
+    }
+    
+    .circle {
+        @include size(0.1875rem, 0.1875rem);
+        background-color: $secondary-font-color;
+        border-radius: 100%;
+    }
+    
+    .description {
+        @include font(0.8125rem, $secondary-font-color, 300);
+        word-wrap: break-word;
+    }
+}

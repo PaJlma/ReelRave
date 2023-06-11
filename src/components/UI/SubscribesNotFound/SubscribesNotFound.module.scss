@@ -1,0 +1,16 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(row, center, center, 0.625rem);
+
+    img {
+        display: block;
+        width: 1.8rem;
+        filter: opacity(80%);
+    }
+
+    p {
+        @include font(0.75rem, $secondary-font-color, center);
+    }
+}

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Player.module.css';
+import styles from './Player.module.scss';
 
 interface IPlayerProps {
     video?: string;

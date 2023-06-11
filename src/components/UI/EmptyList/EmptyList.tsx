@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './EmptyList.module.css';
+import styles from './EmptyList.module.scss';
 
 import catSVG from '../../../assets/images/UI/sleepy-cat.png';
 

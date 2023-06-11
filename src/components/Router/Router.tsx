@@ -6,7 +6,7 @@ import Video from '../Pages/Video/Video';
 import DefaultSidebar from '../Sidebar/DefaultSidebar/DefaultSidebar';
 import SlidingSidebar from '../Sidebar/SlidingSidebar/SlidingSidebar';
 
-import styles from './Router.module.css';
+import styles from './Router.module.scss';
 import Liked from './../Pages/Liked/Liked';
 import CategoriesPage from './../Pages/Categories/Categories';
 import Recomendations from './../Pages/Recomendations/Recomendations';

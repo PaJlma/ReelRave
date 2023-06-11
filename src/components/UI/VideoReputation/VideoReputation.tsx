@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './VideoReputation.module.css';
+import styles from './VideoReputation.module.scss';
 
 import likeSVG from '../../../assets/images/UI/like.svg';
 import dislikeSVG from '../../../assets/images/UI/dislike.svg';

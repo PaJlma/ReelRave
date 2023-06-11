@@ -1,0 +1,29 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    @include flexbox(row, none, center, 0.625rem);
+    @include size(100%, 2.8125rem);
+    @extend %transition-delay;
+    color: #fff;
+    border-radius: 0.3125rem;
+    padding: 0 0.625rem;
+ 
+    .avatar {
+        @include strict-size(1.8rem, 1.8rem);
+        display: block;
+    }
+
+    .info {
+        @include flexbox(row, none, center, 0.5rem);
+
+        p {
+            @include font(0.75rem, $light-font-color);
+        }
+    }
+
+    &:hover {
+        background-color: $secondary-color_lighten;
+    }
+}

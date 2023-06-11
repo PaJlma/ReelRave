@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Separator.module.css';
+import styles from './Separator.module.scss';
 
 interface ISeparatorProps {
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './TextArea.module.css';
+import styles from './TextArea.module.scss';
 
 import arrows from '../../../assets/images/UI/double-arrows.svg';
 

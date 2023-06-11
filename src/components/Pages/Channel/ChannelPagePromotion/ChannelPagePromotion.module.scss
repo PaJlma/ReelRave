@@ -1,0 +1,36 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(row, center, center);
+    width: 100%;
+
+    .item {
+        @include flexbox(row, none, center, 0.9375rem);
+    }
+    
+    .avatar {
+        @include strict-size(8rem, 8rem);
+        display: block;
+    }
+    
+    .info {
+        @include flexbox(column, none, none, 0.3125rem);
+
+        h5 {
+            @include font(1.5rem, $light-font-color, 400);
+        }
+
+        p {
+            @include font(0.875rem, $secondary-font-color, 400);
+        }
+    }
+    
+    .flex {
+        @include flexbox(row, none, center, 0.625rem);
+    }
+    
+    .subscribeButton {
+        @include size(11.25rem, 4rem);
+    }
+}

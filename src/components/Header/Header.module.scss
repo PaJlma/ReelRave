@@ -1,0 +1,15 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
+
+.body {
+    @include flexbox(row, space-between, center);
+    @include size(100%, 3.125rem);
+    @include positioning(fixed, 0, none, none, 0);
+    padding: 0.3rem 0.75rem 0 0.75rem;
+    background-color: $secondary-color;
+
+    .wrapper {
+        @include flexbox(row, none, center, 1.25rem);
+    }
+}
+

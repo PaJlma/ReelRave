@@ -1,0 +1,17 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+@import '../../../scss/blueprints.scss';
+
+.body {
+    @include flexbox(row, center, center);
+    @include font(0.8rem, $dark-font-color);
+    @extend %transition-delay;
+    height: 1.875rem;
+    background-color: $brand-color;
+    border-radius: 0.3125rem;
+    padding: 0 1.25rem;
+
+    &:hover {
+        background-color: $brand-color_lighten;
+    }
+}

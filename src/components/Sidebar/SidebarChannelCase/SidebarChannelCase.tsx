@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './SidebarChannelCase.module.css';
+import styles from './SidebarChannelCase.module.scss';
 
 import confirmedSVG from '../../../assets/images/UI/confirmed.svg';
 

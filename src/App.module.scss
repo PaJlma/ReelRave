@@ -1,0 +1,6 @@
+@import './scss/mixins.scss';
+
+.body {
+    @include flexbox(column);
+    min-height: 100vh;
+}

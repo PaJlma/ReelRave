@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './ReportButton.module.css';
+import styles from './ReportButton.module.scss';
 
 import reportSVG from '../../../assets/images/UI/report.svg';
 

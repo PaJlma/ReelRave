@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Home.module.css';
+import styles from './Home.module.scss';
 import { useTSelector } from './../../../hooks/redux';
 import VideoCase from '../../UI/VideoCase/VideoCase';
 

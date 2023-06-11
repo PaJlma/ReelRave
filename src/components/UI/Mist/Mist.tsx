@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Mist.module.css';
+import styles from './Mist.module.scss';
 
 interface IMistProps {
     active?: boolean;

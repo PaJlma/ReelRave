@@ -1,0 +1,39 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include flexbox(row, none, none, 0.625rem);
+
+    .avatar {
+        @include strict-size(2.5rem, 2.5rem);
+        display: block;
+        user-select: none;
+    }
+
+    .info {
+        @include flexbox(column, center, none, 0.125rem);
+    }
+
+    .channelBox {
+        @include flexbox(row, none, center, 0.4rem);
+    }
+
+    .confirmed {
+        @include size(0.625rem, 0.625rem);
+        display: block;
+        user-select: none; 
+    }
+
+    .channel {
+        @include font(0.95rem, $light-font-color, 550);
+    }
+
+    .counter {
+        @include font(0.75rem, $secondary-font-color);
+    }
+
+    .subscribeButton {
+        height: 2.5rem;
+        padding: 0 1rem;
+    }
+}

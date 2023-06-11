@@ -1,0 +1,34 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.body {
+    @include size(31.25rem, 9.0625rem);
+    display: flex;
+    gap: 0.625rem;
+
+    .preview {
+        @include size(15rem, 9.0625rem);
+        display: block;
+        border-radius: 0.625rem;
+    }
+    
+    .info {
+        @include flexbox(column, none, none, 0.3125rem);
+    }
+    
+    .title {
+        @include font(0.9375rem, $light-font-color, 500);
+    }
+    
+    .channel {
+        @include font(0.8125rem, $secondary-font-color, 500);
+    }
+    
+    .flex {
+        @include flexbox(row, none, center, 0.625rem);
+
+        p {
+            @include font(0.8125rem, $secondary-font-color, 300);
+        }
+    }
+}

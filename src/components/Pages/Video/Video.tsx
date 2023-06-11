@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Player from '../../UI/Player/Player';
-import styles from './Video.module.css';
+import styles from './Video.module.scss';
 
 import { useTSelector } from '../../../hooks/redux';
 import { useParams } from 'react-router-dom';
@@ -34,7 +34,7 @@ const Video: React.FC<IVideoProps> = (props) => {
   return (
     <div className={styles.body}>
       <div className={styles.video}>
-        <Player video={video?.video} autoPlay={true} />
+        <Player video={video?.video} autoPlay={false} />
         <VideoInfo 
           time={video?.time} 
           viewsCount={video?.viewsCount} 
