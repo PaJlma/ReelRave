@@ -1,36 +1,50 @@
 import * as React from 'react';
+import { useDispatch } from 'react-redux';
+import { useTSelector } from '../../../hooks/redux';
+import optionsSlice from '../../../store/reducers/optionsSlice';
+import SlidingSidebar from '../../Sidebar/SlidingSidebar/SlidingSidebar';
+import Mist from '../../UI/Mist/Mist';
 import styles from './Registration.module.scss';
 
 interface IRegistrationProps {
 }
 
 const Registration: React.FunctionComponent<IRegistrationProps> = (props) => {
-  return (
-    <div className={styles.body}>
-        <div className={styles.window}>
-            <h5 className={styles.title}>Регистрация</h5>
-            <form>
-                <fieldset>
-                    <legend>Логин</legend>
-                    <input type="text" required />
-                </fieldset>
-                <fieldset>
-                    <legend>Email</legend>
-                    <input type="email" required />
-                </fieldset>
-                <fieldset>
-                    <legend>Пароль</legend>
-                    <input type="password" required />
-                </fieldset>
-                <fieldset>
-                    <legend>Повторите пароль</legend>
-                    <input type="password" required />
-                </fieldset>
-                <button type='submit'>Отправить</button>
-            </form>
+    const options = useTSelector(state => state.options);
+    const dispatch = useDispatch();
+
+    const onMistClick = (): void => {
+        dispatch(optionsSlice.actions.toggleSlidingSidebar());
+    } 
+
+    return (
+        <div className={styles.body}>
+            <Mist active={options.isSlidingSidebarActive} onClick={onMistClick} />
+            <SlidingSidebar />
+            <div className={styles.window}>
+                <h5 className={styles.title}>Регистрация</h5>
+                <form>
+                    <fieldset>
+                        <legend>Логин</legend>
+                        <input type="text" required />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input type="email" required />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Пароль</legend>
+                        <input type="password" required />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Повторите пароль</legend>
+                        <input type="password" required />
+                    </fieldset>
+                    <button type='submit'>Отправить</button>
+                </form>
+            </div>
         </div>
-    </div>
-  );
+    );
 };
 
 export default Registration;

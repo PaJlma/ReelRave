@@ -38,6 +38,8 @@ const Header: React.FC<IHeaderProps> = (props) => {
                     <Route path='/recomendations' element={<RoundButton onClick={burgerMenuDefaultClickHandler}><img src={burgerMenuSVG} alt="burger-menu" /></RoundButton>} />
                     <Route path='/channel/:privateName' element={<RoundButton onClick={burgerMenuDefaultClickHandler}><img src={burgerMenuSVG} alt="burger-menu" /></RoundButton>} />
                     <Route path='/video/:id' element={<RoundButton onClick={burgerMenuSlidingClickHandler}><img src={burgerMenuSVG} alt="burger-menu" /></RoundButton>} />
+                    <Route path='/login' element={<RoundButton onClick={burgerMenuSlidingClickHandler}><img src={burgerMenuSVG} alt="burger-menu" /></RoundButton>} />
+                    <Route path='/registration' element={<RoundButton onClick={burgerMenuSlidingClickHandler}><img src={burgerMenuSVG} alt="burger-menu" /></RoundButton>} />
                 </Routes>
                 <Logotype />
             </div>
