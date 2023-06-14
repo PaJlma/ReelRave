@@ -11,7 +11,7 @@ import Liked from './../Pages/Liked/Liked';
 import CategoriesPage from './../Pages/Categories/Categories';
 import Recomendations from './../Pages/Recomendations/Recomendations';
 import ChannelPage from './../Pages/Channel/Channel';
-import Registration from '../Pages/Accounts/Registration';
+import Registration from './../Pages/Accounts/Registration';
 import Login from './../Pages/Accounts/Login';
 
 interface IRouterProps {
