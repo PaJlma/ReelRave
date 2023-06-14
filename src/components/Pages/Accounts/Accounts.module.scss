@@ -13,6 +13,11 @@
         width: 25rem;
         background-color: #151818;
 
+        .href {
+            @include font(15px, $brand-color, 300);
+            text-decoration: underline;
+        }
+
         h5 {
             @include font(1.25rem, $brand-color, 600, center);
         }

@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { useTSelector } from '../../../hooks/redux';
 import optionsSlice from '../../../store/reducers/optionsSlice';
 import SlidingSidebar from '../../Sidebar/SlidingSidebar/SlidingSidebar';
 import Mist from '../../UI/Mist/Mist';
-import styles from './Registration.module.scss';
+import styles from './Accounts.module.scss';
 
 interface IRegistrationProps {
 }
@@ -41,6 +42,7 @@ const Registration: React.FunctionComponent<IRegistrationProps> = (props) => {
                         <input type="password" required />
                     </fieldset>
                     <button type='submit'>Отправить</button>
+                    <Link to='/login' className={styles.href}>Уже есть аккаунт?</Link>
                 </form>
             </div>
         </div>

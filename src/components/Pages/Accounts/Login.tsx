@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { useTSelector } from '../../../hooks/redux';
 import optionsSlice from '../../../store/reducers/optionsSlice';
 import SlidingSidebar from '../../Sidebar/SlidingSidebar/SlidingSidebar';
 import Mist from '../../UI/Mist/Mist';
-import styles from './Login.module.scss';
+import styles from './Accounts.module.scss';
 
 interface ILoginProps {
 }
@@ -33,6 +34,7 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                         <input type="password" required />
                     </fieldset>
                     <button type='submit'>Отправить</button>
+                    <Link to='/registration' className={styles.href}>Нет аккаунта?</Link>
                 </form>
             </div>
         </div>
