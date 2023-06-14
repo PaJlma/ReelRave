@@ -7,14 +7,14 @@
     @include flexbox(row, center, center);
 
     .window {
-        @include flexbox(column, center, center, 40px);
+        @include flexbox(column, center, center, 2.5rem);
         padding: 4rem;
         border-radius: 0.3125rem;
         width: 25rem;
         background-color: #151818;
 
         .href {
-            @include font(15px, $brand-color, 300);
+            @include font(0.9375rem, $brand-color, 300);
             text-decoration: underline;
         }
 
