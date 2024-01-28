@@ -1,13 +1,11 @@
 import { IVideo } from './../../types/videoTypes';
 
 import mgePreview from '../images/previews/mihailo.png';
-import walterPreview from '../images/previews/walterABC.png';
-import capibaPreview from '../images/previews/capiba.png';
+import walterPreview from '../images/previews/walterABC.jpg';
+import capibaPreview from '../images/previews/capiba.jpg';
 import mysticalPreview from '../images/previews/10hours.png';
-import obamnaPreview from '../images/previews/soda.png';
+import obamnaPreview from '../images/previews/soda.jpg';
 import cabronPreview from '../images/previews/cabron.png';
-import hornyPreview from '../images/previews/happy.png';
-import negrPreview from '../images/previews/negr.png';
 import bagirovPreview from '../images/previews/bagirov_preview.jpg';
 
 import mgeVideo from '../videos/mihailo.mp4';
@@ -16,8 +14,6 @@ import capibaVideo from '../videos/capiba.mp4';
 import mysticalVideo from '../videos/wise-mystical-tree-music.mp4';
 import obamnaVideo from '../videos/obamna.mp4';
 import cabronVideo from '../videos/cabron.mp4';
-import hornyVideo from '../videos/happy.mp4';
-import negrVideo from '../videos/negr.mp4';
 import bagirovVideo from '../videos/bagirov_trailer.mp4';
 
 const videos: IVideo[] = [
@@ -34,14 +30,14 @@ const videos: IVideo[] = [
         dislikesCount: 0,
         description: `https://www.youtube.com/watch?v=NXjlw-_a61A&ab_channel=%D0%98%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9`,
         commentaries: [
-            { channelPrivateName: 'FUCKER', time: '2023 6 1 12 38 0', text: 'ДАВИ ЯЩЕРОВ!', likesCount: 0, dislikesCount: 0 }
+            { channelPrivateName: 'STALKER', time: '2023 6 1 12 38 0', text: 'ДАВИ ЯЩЕРОВ!', likesCount: 0, dislikesCount: 0 }
         ],
     },
 
     {
         id: 'zOuk36HrKzp2',
         title: 'Walter White Plan A B C || Breaking Bad',
-        channelPrivateName: 'FUCKER',
+        channelPrivateName: 'STALKER',
         time: '2023 4 21 12 34 54',
         category: 'memes',
         preview: walterPreview,
@@ -100,8 +96,8 @@ const videos: IVideo[] = [
         
     {
         id: 'fK2JaePZDbig',
-        title: 'Cabron! I need to see your balls! 🥚🥚 👀',
-        channelPrivateName: 'FUCKER',
+        title: 'Cabron! I need to see your boss!',
+        channelPrivateName: 'STALKER',
         time: '2023 1 30 23 53 34',
         category: 'memes',
         preview: cabronPreview,
@@ -110,36 +106,6 @@ const videos: IVideo[] = [
         likesCount: 0,
         dislikesCount: 0,
         description: `https://www.youtube.com/watch?v=emb6qrcrBI4&ab_channel=whis0eedits`,
-        commentaries: [],
-    },
-
-    {
-        id: 'NdsYOvLNLQGc',
-        title: 'I don’t want to be ♂HORNY♂ anymore, I just want to be happy...',
-        channelPrivateName: 'BillyHarrington_2018F',
-        time: '2017 3 29 12 34 54',
-        category: 'memes',
-        preview: hornyPreview,
-        video: hornyVideo,
-        viewsCount: 0,
-        likesCount: 0,
-        dislikesCount: 0,
-        description: ``,
-        commentaries: [],
-    },
-
-    {
-        id: '2e7jp5nPVEvJ',
-        title: 'Запрещенные барабанщики - убили негра',
-        channelPrivateName: 'Z_Barabanshiki',
-        time: '2023 3 29 12 40 41',
-        category: 'music',
-        preview: negrPreview,
-        video: negrVideo,
-        viewsCount: 0,
-        likesCount: 0,
-        dislikesCount: 0,
-        description: `https://www.youtube.com/watch?v=bIcKKa2bVvg&ab_channel=MP3Nice`,
         commentaries: [],
     },
 

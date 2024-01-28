@@ -11,6 +11,7 @@ import Button from '../UI/Button/Button';
 import { useDispatch } from 'react-redux';
 import optionsSlice from './../../store/reducers/optionsSlice';
 import { Route, Routes } from 'react-router-dom';
+import MediaQuery from 'react-responsive';
 
 interface IHeaderProps {
 
@@ -48,7 +49,9 @@ const Header: React.FC<IHeaderProps> = (props) => {
 
             <div className={styles.wrapper}>
                 <Button isNav={true} to='/login' text='Войти' />
-                <Button isNav={true} to='/registration' text='Зарегистрироваться' />
+                <MediaQuery minWidth={'1150px'}>
+                    <Button isNav={true} to='/registration' text='Зарегистрироваться' />
+                </MediaQuery>
                 <RoundButton>
                     <img src={settingsSVG} style={{width: '1.4375rem', height: '1.4375rem'}} alt="settings" />
                 </RoundButton>

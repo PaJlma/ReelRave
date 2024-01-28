@@ -23,8 +23,8 @@ const channels: IChannel[] = [
     },
 
     {
-        publicName: 'F.U.C.K.E.R.',
-        privateName: 'FUCKER',
+        publicName: 'S.T.A.L.K.E.R.',
+        privateName: 'STALKER',
         isConfirmed: true,
         avatar: fuckerAvatar,
         header: null,
